@@ -6,6 +6,7 @@
         "data", "tables", "dataTables",
         "Flot", "charts", "excanvas",
         "html5shiv", "Respond.JS",
+        "menu", "metisMenu",
         "yii", "yii2",
         "asset", "bundle",
         "PHP"
