@@ -1,0 +1,39 @@
+{
+    "name": "p2made/yii2-asset-collection",
+    "description": "All my Yii 2 AssetBundles installed with one entry in composer.json",
+    "keywords": [
+        "yii",
+        "yii2",
+        "asset",
+        "bundle"
+    ],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Pedro Plwoman",
+            "email": "pedro@p2made.net.au",
+            "homepage": "http://p2made.net.au/"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.0.*",
+        "bower-asset/moment" : "*",
+        "bower-asset/moment-timezone" : "*",
+        "datatables/datatables": "1.*",
+        "kartik-v/yii2-datecontrol": "*",
+        "kartik-v/yii2-field-range": "*",
+        "kartik-v/yii2-social": "*",
+        "kartik-v/yii2-widgets": "*",
+        "onokumus/metismenu": "2.*",
+        "philippfrenzel/yii2fullcalendar": "*",
+        "rmrevin/yii2-fontawesome": "2.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "p2metisMenu\\": ""
+        }
+    }
+}
