@@ -2,15 +2,15 @@
     "name": "p2made/yii2-asset-collection",
     "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.",
     "keywords": [
-        "Social", "Bootstrap Social",
-        "data", "tables", "dataTables",
+        "yii", "yii2", "PHP",
+        "asset", "bundle",
+        "menu", "metisMenu",
+        "Bootstrap Social", "social",
+        "dataTables", "data", "tables",
         "Flot", "Morris", "Morris.JS", "charts", "excanvas",
         "raphael", "graphics", "vector", "vector graphics",
-        "html5shiv", "Respond.JS",
-        "menu", "metisMenu",
-        "yii", "yii2",
-        "asset", "bundle",
-        "PHP"
+        "SweetAlert", "alerts",
+        "html5shiv", "Respond.JS"
     ],
     "type": "yii2-extension",
     "license": "MIT",
