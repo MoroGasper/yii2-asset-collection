@@ -53,8 +53,8 @@ class AssetBundleCDN extends \yii\web\AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'p2y2\FlotChartsAssetCDN\FlotTooltipAsset',
-		'p2y2\FlotChartsAssetCDN\ExcanvasAssetCDN',
+		'p2made\assets\ExcanvasAssetCDN',
+		'p2made\assets\FlotTooltipAsset',
 	];
 }
 
