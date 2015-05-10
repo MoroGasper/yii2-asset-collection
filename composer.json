@@ -5,6 +5,7 @@
         "Social", "Bootstrap Social",
         "data", "tables", "dataTables",
         "Flot", "charts", "excanvas",
+        "raphael", "graphics", "vector", "vector graphics",
         "html5shiv", "Respond.JS",
         "menu", "metisMenu",
         "yii", "yii2",

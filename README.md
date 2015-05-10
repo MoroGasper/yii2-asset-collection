@@ -11,6 +11,8 @@ Resource | Published Asset | CDN Asset
 excanvas | `ExcanvasAsset`  | `ExcanvasAssetCDN`
 Flot tooltip | `FlotTooltipAsset`  |
 [metisMenu](https://github.com/onokumus/metisMenu) | `MetisMenuAsset`  | `MetisMenuAssetCDN`
+[Raphaël](http://raphaeljs.com) | `RaphaelAsset`  | `RaphaelAssetCDN`
+linkedResourceName | `assetName`  | `assetNameCDN`
 linkedResourceName | `assetName`  | `assetNameCDN`
 linkedResourceName | `assetName`  | `assetNameCDN`
 [html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `Html5shivAsset`  | `Html5shivAssetCDN`
@@ -18,7 +20,6 @@ linkedResourceName | `assetName`  | `assetNameCDN`
 
 - [p2y2morrisAsset](https://github.com/p2made/p2y2morrisAsset) for [Morris.JS](http://morrisjs.github.io/morris.js/)
 - [p2y2morrisAsset](p2y2morrisAsset) for [Morris.JS](http://morrisjs.github.io/morris.js/)
-- [p2y2raphaelAsset](https://github.com/p2made/p2y2raphaelAsset) for [Raphaël](http://raphaeljs.com)
 - [p2y2sweetAlertAsset](https://github.com/p2made/p2y2sweetAlertAsset) for [SweetAlert](http://t4t5.github.io/sweetalert/)
 
 
