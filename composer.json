@@ -5,6 +5,7 @@
         "Social", "Bootstrap Social",
         "data", "tables", "dataTables",
         "Flot", "charts", "excanvas",
+        "html5shiv", "Respond.JS",
         "yii", "yii2",
         "asset", "bundle",
         "PHP"
