@@ -1,11 +1,12 @@
 {
     "name": "p2made/yii2-asset-collection",
-    "description": "All my Yii 2 AssetBundles installed with one entry in composer.json",
+    "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.",
     "keywords": [
         "yii",
         "yii2",
         "asset",
-        "bundle"
+        "bundle",
+        "PHP"
     ],
     "type": "yii2-extension",
     "license": "MIT",
@@ -33,7 +34,7 @@
     },
     "autoload": {
         "psr-4": {
-            "p2metisMenu\\": ""
+            "p2made\\assets\\": ""
         }
     }
 }

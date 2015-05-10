@@ -1,16 +1,16 @@
 <?php
 /**
- * AssetBundle.php
+ * BootstrapSocialAsset.php
  *
- * @author Pedro Plowman https://github.com/p2made
+ * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
+ * @author Pedro Plowman
+ * @package p2made/yii2-asset-collection
+ * @version 0.1.0
+ *
  */
 
-namespace p2y2\bootstrapSocialAsset;
+namespace p2made\assets;
 
-/**
- * Class AssetBundle
- * @package p2y2bootstrapSocialAsset\AssetBundle
- */
 class BootstrapSocialAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/bootstrap-social';
