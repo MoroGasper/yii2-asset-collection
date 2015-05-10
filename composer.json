@@ -12,9 +12,15 @@
         "SweetAlert", "alerts",
         "html5shiv", "Respond.JS"
     ],
+    "authors": [
+        {
+            "name": "Pedro Plowman",
+            "web": "https://github.com/p2made"
+        }
+    ],
     "type": "yii2-extension",
     "license": "MIT",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Pedro Plwoman",
