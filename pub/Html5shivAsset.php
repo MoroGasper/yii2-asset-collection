@@ -1,6 +1,6 @@
 <?php
 /**
- * Html5shivAsset.php
+ * pub/Html5shivAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,7 +9,7 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\pub;
 
 class Html5shivAsset extends \yii\web\AssetBundle
 {

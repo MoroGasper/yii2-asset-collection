@@ -1,6 +1,6 @@
 <?php
 /**
- * RaphaelAsset.php
+ * pub/MorrisAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,21 +9,24 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\pub;
 
-class RaphaelAsset extends \yii\web\AssetBundle
+class MorrisAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/raphael-2.1.2';
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/morris.js-0.5.1';
 
-	public $css = [];
+	public $css = [
+		'morris.css',
+	];
 
 	public $js = [
-		'raphael-min.js',
+		'morris.min.js',
 	];
 
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
+		'p2made\assets\pub\RaphaelAsset',
 	];
 }

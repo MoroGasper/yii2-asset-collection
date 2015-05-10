@@ -1,6 +1,6 @@
 <?php
 /**
- * RaphaelAssetCDN.php
+ * pub/RaphaelAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,16 +9,16 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\pub;
 
-class RaphaelAssetCDN extends \yii\web\AssetBundle
+class RaphaelAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = null;
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/raphael-2.1.2';
 
 	public $css = [];
 
 	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
+		'raphael-min.js',
 	];
 
 	public $depends = [

@@ -1,6 +1,6 @@
 <?php
 /**
- * Html5shivAssetCDN.php
+ * cdn/ExcanvasAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,17 +9,16 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class Html5shivAssetCDN extends \yii\web\AssetBundle
+class ExcanvasAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = null;
 
 	public $css = [];
 
 	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js',
-		'//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js',
+		'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
 	];
 
 	public $jsOptions = [
@@ -32,7 +31,3 @@ class Html5shivAssetCDN extends \yii\web\AssetBundle
 		'yii\web\JqueryAsset',
 	];
 }
-
-/*
-		'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js',
-*/

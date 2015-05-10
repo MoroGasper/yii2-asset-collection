@@ -1,6 +1,6 @@
 <?php
 /**
- * SweetAlertAsset.php
+ * pub/BootstrapSocialAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,23 +9,23 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\pub;
 
-class SweetAlertAsset extends \yii\web\AssetBundle
+class BootstrapSocialAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/sweetalert-0.5.0/dist';
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/bootstrap-social';
 
 	public $css = [
-		'sweetalert.css',
+		'bootstrap-social.css',
 	];
 
 	public $js = [
-		'sweetalert.min.js',
 	];
 
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
+		'\rmrevin\yii\fontawesome\AssetBundle',
 	];
 }

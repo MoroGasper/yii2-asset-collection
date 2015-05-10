@@ -1,6 +1,6 @@
 <?php
 /**
- * FlotTooltipAsset.php
+ * cdn/RaphaelAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,16 +9,16 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class FlotTooltipAsset extends \yii\web\AssetBundle
+class RaphaelAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/flot.tooltip';
+	public $sourcePath = null;
 
 	public $css = [];
 
 	public $js = [
-		'js/jquery.flot.tooltip.min.js',
+		'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
 	];
 
 	public $depends = [

@@ -1,6 +1,6 @@
 <?php
 /**
- * FlotChartsAssetCDN.php
+ * cdn/FlotChartsAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,9 +9,9 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class FlotChartsAssetCDN extends \yii\web\AssetBundle
+class FlotChartsAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = null;
 
@@ -28,33 +28,8 @@ class FlotChartsAssetCDN extends \yii\web\AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'p2made\assets\ExcanvasAssetCDN',
-		'p2made\assets\FlotTooltipAsset',
-	];
-}
-
-<?php
-/**
- * AssetBundleCDN.php
- *
- * @author Pedro Plowman //github.com/p2made
- */
-
-namespace p2y2\FlotChartsAssetCDN;
-
-/**
- * Class AssetBundleCDN
- * @package p2y2\FlotChartsAssetCDN\AssetBundleCDN
- */
-class AssetBundleCDN extends \yii\web\AssetBundle
-{
-
-	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap\BootstrapAsset',
-		'yii\web\JqueryAsset',
-		'p2made\assets\ExcanvasAssetCDN',
-		'p2made\assets\FlotTooltipAsset',
+		'p2made\assets\cdn\ExcanvasAsset',
+		'p2made\assets\pub\FlotTooltipAsset',
 	];
 }
 

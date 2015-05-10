@@ -1,6 +1,6 @@
 <?php
 /**
- * FlotChartsAsset.php
+ * pub/FlotChartsAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,7 +9,7 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\pub;
 
 class FlotChartsAsset extends \yii\web\AssetBundle
 {
@@ -28,8 +28,8 @@ class FlotChartsAsset extends \yii\web\AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'p2made\assets\ExcanvasAsset',
-		'p2made\assets\FlotTooltipAsset',
+		'p2made\assets\pub\ExcanvasAsset',
+		'p2made\assets\pub\FlotTooltipAsset',
 	];
 }
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * MorrisAsset.php
+ * cdn/MetisMenuAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,24 +9,23 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class MorrisAsset extends \yii\web\AssetBundle
+class MetisMenuAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/morris.js-0.5.1';
+	public $sourcePath = null;
 
 	public $css = [
-		'morris.css',
+		'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.css',
 	];
 
 	public $js = [
-		'morris.min.js',
+		'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.js',
 	];
 
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'p2made\assets\RaphaelAsset',
 	];
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * ExcanvasAsset.php
+ * cdn/Html5shivAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,16 +9,17 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class ExcanvasAsset extends \yii\web\AssetBundle
+class Html5shivAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/flot-0.8.3';
+	public $sourcePath = null;
 
 	public $css = [];
 
 	public $js = [
-		'excanvas.min.js',
+		'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js',
+		'//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js',
 	];
 
 	public $jsOptions = [
@@ -31,3 +32,7 @@ class ExcanvasAsset extends \yii\web\AssetBundle
 		'yii\web\JqueryAsset',
 	];
 }
+
+/*
+		'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js',
+*/

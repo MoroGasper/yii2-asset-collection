@@ -1,6 +1,6 @@
 <?php
 /**
- * DataTablesAsset.php
+ * pub/DataTablesAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,9 +9,9 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class DataTablesAssetCDN extends \yii\web\AssetBundle
+class DataTablesAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = null;
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * ExcanvasAssetCDN.php
+ * cdn/BootstrapSocialAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,25 +9,22 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class ExcanvasAssetCDN extends \yii\web\AssetBundle
+class BootstrapSocialAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = null;
 
-	public $css = [];
-
-	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
+	public $css = [
+		'//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.0/bootstrap-social.min.css',
 	];
 
-	public $jsOptions = [
-		'condition' => 'lte IE9'
-	];
+	public $js = [];
 
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
+		'\rmrevin\yii\fontawesome\AssetBundle',
 	];
 }

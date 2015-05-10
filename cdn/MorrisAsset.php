@@ -1,6 +1,6 @@
 <?php
 /**
- * MorrisAssetCDN.php
+ * cdn/MorrisAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,9 +9,9 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\cdn;
 
-class MorrisAssetCDN extends \yii\web\AssetBundle
+class MorrisAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = null;
 
@@ -27,6 +27,6 @@ class MorrisAssetCDN extends \yii\web\AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'p2made\assets\RaphaelAssetCDN',
+		'p2made\assets\cdn\RaphaelAsset',
 	];
 }

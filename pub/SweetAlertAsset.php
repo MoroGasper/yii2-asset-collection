@@ -1,6 +1,6 @@
 <?php
 /**
- * MetisMenuAsset.php
+ * pub/SweetAlertAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,18 +9,18 @@
  *
  */
 
-namespace p2made\assets;
+namespace p2made\assets\pub;
 
-class MetisMenuAsset extends \yii\web\AssetBundle
+class SweetAlertAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/onokumus/metismenu/dist';
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/sweetalert-0.5.0/dist';
 
 	public $css = [
-		'metisMenu.min.css',
+		'sweetalert.css',
 	];
 
 	public $js = [
-		'metisMenu.min.js',
+		'sweetalert.min.js',
 	];
 
 	public $depends = [
