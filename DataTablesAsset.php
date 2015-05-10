@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class DataTablesAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@p2y2dataTablesAsset/DataTables-1.10.7';
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/DataTables-1.10.7';
 
 	public $css = [
 		'plugins/integration/bootstrap/3/dataTables.bootstrap.css',
