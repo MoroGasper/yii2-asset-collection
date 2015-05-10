@@ -3,7 +3,14 @@ p2y2assetCollection
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
-- [p2y2bootstrapSocialAsset](https://github.com/p2made/p2y2bootstrapSocialAsset) for [Bootstrap Social](https://github.com/lipis/bootstrap-social)
+Resource | Published Asset | CDN Asset
+------------ | ------------- | ------------
+[Bootstrap Social](https://github.com/lipis/bootstrap-social) | `BootstrapSocialAsset`  | `BootstrapSocialAssetCDN`
+linkedResourceName | `assetName`  | `assetNameCDN`
+linkedResourceName | `assetName`  | `assetNameCDN`
+linkedResourceName | `assetName`  | `assetNameCDN`
+
+
 - [p2y2dataTablesAsset](https://github.com/p2made/p2y2dataTablesAsset) for [dataTables](http://datatables.net)
 - [p2y2flotChartsAsset](p2y2morrisAsset) for [Flot Charts](http://www.flotcharts.org)
 - [p2y2metisMenuAsset](https://github.com/p2made/p2y2metisMenuAsset) for [metisMenu](https://github.com/onokumus/metisMenu)
