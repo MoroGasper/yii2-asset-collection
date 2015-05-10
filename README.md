@@ -21,7 +21,6 @@ Flot tooltip | `pub\FlotTooltipAsset`  |
 
 
 
-
 Installation
 ------------
 
