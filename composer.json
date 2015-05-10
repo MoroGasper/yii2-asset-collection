@@ -10,7 +10,8 @@
         "Flot", "Morris", "Morris.JS", "charts", "excanvas",
         "raphael", "graphics", "vector", "vector graphics",
         "SweetAlert", "alerts",
-        "moment.js", "time", "moment", "timezone", "moment-timezone"
+        "moment.js", "time", "moment", "timezone", "moment-timezone",
+        "FullCalendar", "calendar",
         "html5shiv", "Respond.JS"
     ],
     "authors": [
