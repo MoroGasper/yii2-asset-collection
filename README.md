@@ -7,11 +7,13 @@ Resource | Published Asset | CDN Asset
 ------------ | ------------- | ------------
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `BootstrapSocialAsset`  | `BootstrapSocialAssetCDN`
 [dataTables](http://datatables.net) | `DataTablesAsset`  | `DataTablesAssetCDN`
+[Flot Charts](http://www.flotcharts.org) | `FlotChartsAsset`  | `FlotChartsAssetCDN`
+excanvas | `ExcanvasAsset`  | `ExcanvasAssetCDN`
+Flot tooltip | `FlotTooltipAsset`  |
 linkedResourceName | `assetName`  | `assetNameCDN`
 linkedResourceName | `assetName`  | `assetNameCDN`
 
 
-- [p2y2flotChartsAsset](p2y2morrisAsset) for [Flot Charts](http://www.flotcharts.org)
 - [p2y2metisMenuAsset](https://github.com/p2made/p2y2metisMenuAsset) for [metisMenu](https://github.com/onokumus/metisMenu)
 - [p2y2morrisAsset](https://github.com/p2made/p2y2morrisAsset) for [Morris.JS](http://morrisjs.github.io/morris.js/)
 - [p2y2morrisAsset](p2y2morrisAsset) for [Morris.JS](http://morrisjs.github.io/morris.js/)
