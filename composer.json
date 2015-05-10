@@ -2,10 +2,11 @@
     "name": "p2made/yii2-asset-collection",
     "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.",
     "keywords": [
-        "yii",
-        "yii2",
-        "asset",
-        "bundle",
+        "Social", "Bootstrap Social",
+        "data", "tables", "dataTables",
+        "excanvas",
+        "yii", "yii2",
+        "asset", "bundle",
         "PHP"
     ],
     "type": "yii2-extension",

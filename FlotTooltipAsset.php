@@ -2,18 +2,18 @@
 /**
  * FlotTooltipAsset.php
  *
- * @author Pedro Plowman https://github.com/p2made
+ * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
+ * @author Pedro Plowman
+ * @package p2made/yii2-asset-collection
+ * @version 0.1.0
+ *
  */
 
-namespace p2y2\flotChartsAsset;
+namespace p2made\assets;
 
-/**
- * Class AssetBundle
- * @package p2y2\flotChartsAsset\FlotTooltipAsset
- */
 class FlotTooltipAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/p2y2flotChartsAsset/flot.tooltip';
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/flot.tooltip';
 
 	public $css = [];
 
