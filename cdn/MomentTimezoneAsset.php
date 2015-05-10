@@ -13,12 +13,12 @@ namespace p2made\assets\cdn;
 
 class MomentTimezoneAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@bower/moment-timezone';
+	public $sourcePath = null;
 
 	public $css = [];
 
 	public $js = [
-		'moment-timezone.js',
+		'//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.3.1/moment-timezone.min.js',
 	];
 
 	public $depends = [];

@@ -11,10 +11,14 @@ Resource | Published Asset | CDN Asset
 excanvas | `pub\ExcanvasAsset`  | `cdn\ExcanvasAsset`
 Flot tooltip | `pub\FlotTooltipAsset`  |
 [metisMenu](https://github.com/onokumus/metisMenu) | `pub\MetisMenuAsset`  | `cdn\MetisMenuAsset`
+[Moment.js](http://momentjs.com/) | `pub\MomentAsset`  | `cdn\MomentAsset`
+[MomentTimezone](http://momentjs.com/timezone/) | `pub\MomentTimezoneAsset`  | `cdn\MomentTimezoneAsset`
 [Morris.JS](http://morrisjs.github.io/morris.js/) | `pub\MorrisAsset`  | `cdn\MorrisAsset`
 [Raphaël](http://raphaeljs.com) | `pub\RaphaelAsset`  | `cdn\RaphaelAsset`
 [SweetAlert](http://t4t5.github.io/sweetalert/) | `pub\SweetAlertAsset`  | `cdn\SweetAlertAsset`
 [html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `pub\Html5shivAsset`  | `cdn\Html5shivAsset`
+
+
 
 Installation
 ------------
