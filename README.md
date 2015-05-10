@@ -1,7 +1,7 @@
 p2y2assetCollection
 ===================
 
-All my Yii 2 AssetBundles installed with one entry in composer.json
+A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
 - [p2y2bootstrapSocialAsset](https://github.com/p2made/p2y2bootstrapSocialAsset) for [Bootstrap Social](https://github.com/lipis/bootstrap-social)
 - [p2y2dataTablesAsset](https://github.com/p2made/p2y2dataTablesAsset) for [dataTables](http://datatables.net)
