@@ -6,12 +6,11 @@ A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 Resource | Published Asset | CDN Asset
 ------------ | ------------- | ------------
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `BootstrapSocialAsset`  | `BootstrapSocialAssetCDN`
-linkedResourceName | `assetName`  | `assetNameCDN`
+[dataTables](http://datatables.net) | `DataTablesAsset`  | `DataTablesAssetCDN`
 linkedResourceName | `assetName`  | `assetNameCDN`
 linkedResourceName | `assetName`  | `assetNameCDN`
 
 
-- [p2y2dataTablesAsset](https://github.com/p2made/p2y2dataTablesAsset) for [dataTables](http://datatables.net)
 - [p2y2flotChartsAsset](p2y2morrisAsset) for [Flot Charts](http://www.flotcharts.org)
 - [p2y2metisMenuAsset](https://github.com/p2made/p2y2metisMenuAsset) for [metisMenu](https://github.com/onokumus/metisMenu)
 - [p2y2morrisAsset](https://github.com/p2made/p2y2morrisAsset) for [Morris.JS](http://morrisjs.github.io/morris.js/)
