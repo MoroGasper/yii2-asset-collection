@@ -13,7 +13,7 @@
         "dataTables", "data", "tables",
         "Flot", "Morris", "Morris.JS", "charts", "excanvas",
         "raphael", "graphics", "vector", "vector graphics",
-        "SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image"
+        "SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image",
         "moment.js", "time", "moment", "timezone", "moment-timezone",
         "FullCalendar", "calendar",
         "html5shiv", "Respond.JS"
