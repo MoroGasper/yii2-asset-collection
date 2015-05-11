@@ -29,19 +29,19 @@ The preferred way to install p2y2assetCollection is through [composer](http://ge
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-assets-collection "dev-master"
+composer require p2made/yii2-assets-collection "1.*"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-assets-collection "dev-master"
+php composer.phar require p2made/yii2-assets-collection "1.*"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-assets-collection": "dev-master"
+	"p2made/yii2-assets-collection": "1.*"
 ```
 
 to the requires section of your `composer.json` file & p2y2assetCollection will be installed next time you run `composer update`.
