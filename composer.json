@@ -3,6 +3,7 @@
     "type": "yii2-extension",
     "version": "1.0.0",
     "license": "MIT",
+
     "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.",
     "keywords": [
         "yii", "yii2", "PHP",
@@ -12,18 +13,11 @@
         "dataTables", "data", "tables",
         "Flot", "Morris", "Morris.JS", "charts", "excanvas",
         "raphael", "graphics", "vector", "vector graphics",
-        "SweetAlert", "alerts",
+        "SweetAlert", "alerts", "Holder.js", "placeholder", "placeholder-image"
         "moment.js", "time", "moment", "timezone", "moment-timezone",
         "FullCalendar", "calendar",
         "html5shiv", "Respond.JS"
     ],
-    "authors": [
-        {
-            "name": "Pedro Plowman",
-            "web": "https://github.com/p2made"
-        }
-    ],
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Pedro Plwoman",
@@ -31,6 +25,9 @@
             "homepage": "http://p2made.net.au/"
         }
     ],
+
+    "minimum-stability": "dev",
+
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": "2.0.*",

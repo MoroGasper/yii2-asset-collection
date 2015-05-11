@@ -11,6 +11,7 @@ Resource | Published Asset | CDN Asset
 excanvas | `pub\ExcanvasAsset`  | `cdn\ExcanvasAsset`
 Flot tooltip | `pub\FlotTooltipAsset`  |
 [FullCalendar](http://fullcalendar.io) | `pub\FullCalendarAsset`  | `cdn\FullCalendarAsset`
+[Holder.js](http://imsky.github.io/holder/) | `pub\HolderAsset`  | `cdn\HolderAsset`
 [metisMenu](https://github.com/onokumus/metisMenu) | `pub\MetisMenuAsset`  | `cdn\MetisMenuAsset`
 [Moment.js](http://momentjs.com/) | `pub\MomentAsset`  | `cdn\MomentAsset`
 [MomentTimezone](http://momentjs.com/timezone/) | `pub\MomentTimezoneAsset`  | `cdn\MomentTimezoneAsset`
