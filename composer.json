@@ -1,5 +1,8 @@
 {
     "name": "p2made/yii2-asset-collection",
+    "type": "yii2-extension",
+    "version": "1.0.0",
+    "license": "MIT",
     "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.",
     "keywords": [
         "yii", "yii2", "PHP",
@@ -20,8 +23,6 @@
             "web": "https://github.com/p2made"
         }
     ],
-    "type": "yii2-extension",
-    "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
         {
