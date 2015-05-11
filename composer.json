@@ -37,10 +37,6 @@
         "bower-asset/moment" : "*",
         "bower-asset/moment-timezone" : "*",
         "datatables/datatables": "1.*",
-        "kartik-v/yii2-datecontrol": "*",
-        "kartik-v/yii2-field-range": "*",
-        "kartik-v/yii2-social": "*",
-        "kartik-v/yii2-widgets": "*",
         "onokumus/metismenu": "2.*",
         "philippfrenzel/yii2fullcalendar": "*",
         "rmrevin/yii2-fontawesome": "2.9.*"
