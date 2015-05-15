@@ -1,6 +1,6 @@
 <?php
 /**
- * pub/HolderAsset.php
+ * ExcanvasAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,16 +9,18 @@
  *
  */
 
-namespace p2made\assets\pub;
+namespace p2made\assets;
 
-class HolderAsset extends \yii\web\AssetBundle
+class ExcanvasAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/imsky-holder-b6a69ce';
+	private $assetName = 'excanvas';
 
-	public $css = [];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'holder.min.js',
+	public $js = $this->assetJs($assetName);
+
+	public $jsOptions = [
+		'condition' => 'lte IE9'
 	];
 
 	public $depends = [

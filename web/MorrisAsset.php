@@ -1,6 +1,6 @@
 <?php
 /**
- * pub/MorrisAsset.php
+ * MorrisAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,19 +9,17 @@
  *
  */
 
-namespace p2made\assets\pub;
+namespace p2made\assets;
 
-class MorrisAsset extends \yii\web\AssetBundle
+class MorrisAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/morris.js-0.5.1';
+	private $assetName = 'morris';
 
-	public $css = [
-		'morris.css',
-	];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'morris.min.js',
-	];
+	public $css = $this->assetCss($assetName);
+
+	public $js = $this->assetJs($assetName);
 
 	public $depends = [
 		'yii\web\YiiAsset',

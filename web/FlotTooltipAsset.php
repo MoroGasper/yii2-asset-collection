@@ -1,6 +1,6 @@
 <?php
 /**
- * cdn/MetisMenuAsset.php
+ * FlotTooltipAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,18 +9,14 @@
  *
  */
 
-namespace p2made\assets\cdn;
+namespace p2made\assets;
 
-class MetisMenuAsset extends \yii\web\AssetBundle
+class FlotTooltipAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = null;
-
-	public $css = [
-		'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.css',
-	];
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/flot.tooltip';
 
 	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.js',
+		'js/jquery.flot.tooltip.min.js',
 	];
 
 	public $depends = [

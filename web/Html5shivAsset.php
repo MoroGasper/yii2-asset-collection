@@ -1,6 +1,6 @@
 <?php
 /**
- * pub/FlotTooltipAsset.php
+ * Html5shivAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,16 +9,18 @@
  *
  */
 
-namespace p2made\assets\pub;
+namespace p2made\assets;
 
-class FlotTooltipAsset extends \yii\web\AssetBundle
+class Html5shivAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/flot.tooltip';
+	private $assetName = 'html5shiv';
 
-	public $css = [];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'js/jquery.flot.tooltip.min.js',
+	public $js = $this->assetJs($assetName);
+
+	public $jsOptions = [
+		'condition' => 'lte IE9'
 	];
 
 	public $depends = [

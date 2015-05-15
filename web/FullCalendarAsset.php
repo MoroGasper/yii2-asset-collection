@@ -1,6 +1,6 @@
 <?php
 /**
- * cdn/SweetAlertAsset.php
+ * FullCalendarAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -11,21 +11,20 @@
 
 namespace p2made\assets;
 
-class SweetAlertAsset extends \yii\web\AssetBundle
+class FullCalendarAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = null;
+	private $assetName = 'fullCalendar';
 
-	public $css = [
-		'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.css',
-	];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.min.js',
-	];
+	public $css = $this->assetCss($assetName);
+
+	public $js = $this->assetJs($assetName);
 
 	public $depends = [
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
+		'p2made\assets\pub\MomentAsset',
 	];
 }

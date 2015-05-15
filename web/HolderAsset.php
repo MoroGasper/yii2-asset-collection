@@ -1,6 +1,6 @@
 <?php
 /**
- * pub/RaphaelAsset.php
+ * HolderAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,17 +9,15 @@
  *
  */
 
-namespace p2made\assets\pub;
+namespace p2made\assets;
 
-class RaphaelAsset extends \yii\web\AssetBundle
+class HolderAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/raphael-2.1.2';
+	private $assetName = 'holder';
 
-	public $css = [];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'raphael-min.js',
-	];
+	public $js = $this->assetJs($assetName);
 
 	public $depends = [
 		'yii\web\YiiAsset',

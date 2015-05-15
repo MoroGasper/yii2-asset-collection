@@ -1,6 +1,6 @@
 <?php
 /**
- * pub/SweetAlertAsset.php
+ * RaphaelAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,19 +9,15 @@
  *
  */
 
-namespace p2made\assets\pub;
+namespace p2made\assets;
 
-class SweetAlertAsset extends \yii\web\AssetBundle
+class RaphaelAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/sweetalert-0.5.0/dist';
+	private $assetName = 'raphael';
 
-	public $css = [
-		'sweetalert.css',
-	];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'sweetalert.min.js',
-	];
+	public $js = $this->assetJs($assetName);
 
 	public $depends = [
 		'yii\web\YiiAsset',

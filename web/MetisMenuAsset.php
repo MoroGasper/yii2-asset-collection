@@ -1,6 +1,6 @@
 <?php
 /**
- * cdn/ExcanvasAsset.php
+ * MetisMenuAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,21 +9,17 @@
  *
  */
 
-namespace p2made\assets\cdn;
+namespace p2made\assets;
 
-class ExcanvasAsset extends \yii\web\AssetBundle
+class MetisMenuAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = null;
+	private $assetName = 'metisMenu';
 
-	public $css = [];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
-	];
+	public $css = $this->assetCss($assetName);
 
-	public $jsOptions = [
-		'condition' => 'lte IE9'
-	];
+	public $js = $this->assetJs($assetName);
 
 	public $depends = [
 		'yii\web\YiiAsset',

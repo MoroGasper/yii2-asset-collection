@@ -1,6 +1,6 @@
 <?php
 /**
- * cdn/RaphaelAsset.php
+ * DataTablesAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,17 +9,17 @@
  *
  */
 
-namespace p2made\assets\cdn;
+namespace p2made\assets;
 
-class RaphaelAsset extends \yii\web\AssetBundle
+class DataTablesAsset extends p2made\assets\P2AssetBundle
 {
-	public $sourcePath = null;
+	private $assetName = 'dataTables';
 
-	public $css = [];
+	public $sourcePath = $this->assetSourcePath($assetName);
 
-	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
-	];
+	public $css = $this->assetCss($assetName);
+
+	public $js = $this->assetJs($assetName);
 
 	public $depends = [
 		'yii\web\YiiAsset',
