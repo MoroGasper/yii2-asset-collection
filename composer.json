@@ -1,12 +1,9 @@
 {
     "name": "p2made/yii2-asset-collection",
-    "type": "yii2-extension",
-    "version": "1.0.0",
-    "license": "MIT",
-
     "description": "A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.",
+    "type": "yii2-extension",
     "keywords": [
-        "yii", "yii2", "PHP",
+        "yii2", "yii", "extension", "PHP",
         "asset", "bundle",
         "menu", "metisMenu",
         "Bootstrap Social", "social",
@@ -18,18 +15,19 @@
         "FullCalendar", "calendar",
         "html5shiv", "Respond.JS"
     ],
+    "license": "MIT",
     "authors": [
         {
-            "name": "Pedro Plwoman",
-            "email": "pedro@p2made.net.au",
-            "homepage": "http://p2made.net.au/"
+            "name": "Pedro Plowman",
+            "email": "p2opensource@gmail.com",
+            "homepage": "https://github.com/p2made"
         }
     ],
 
+    "version": "1.0.0",
     "minimum-stability": "dev",
 
     "require": {
-        "php": ">=5.4.0",
         "yiisoft/yii2": "2.0.*",
         "bower-asset/moment" : "*",
         "bower-asset/moment-timezone" : "*",
