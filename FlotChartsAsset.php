@@ -30,7 +30,7 @@ class FlotChartsAsset extends P2AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'p2made\assets\pub\ExcanvasAsset',
-		'p2made\assets\pub\FlotTooltipAsset',
+		'p2made\assets\ExcanvasAsset',
+		'p2made\assets\FlotTooltipAsset',
 	];
 }
