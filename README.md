@@ -1,26 +1,26 @@
-p2y2assetCollection
-===================
+P2AssetCollection
+=================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
-Resource | Published Asset | CDN Asset
------------- | ------------- | ------------
-[Bootstrap Social](https://github.com/lipis/bootstrap-social) | `pub\BootstrapSocialAsset`  | `cdn\BootstrapSocialAsset`
-[dataTables](http://datatables.net) | `pub\DataTablesAsset`  | `cdn\DataTablesAsset`
-[Flot Charts](http://www.flotcharts.org) | `pub\FlotChartsAsset`  | `cdn\FlotChartsAsset`
-excanvas | `pub\ExcanvasAsset`  | `cdn\ExcanvasAsset`
+Resource | Asset Class
+------------------------- | -------------------------
+[Bootstrap Social](https://github.com/lipis/bootstrap-social) | `BootstrapSocialAsset`
+[dataTables](http://datatables.net) | `DataTablesAsset`
+[Flot Charts](http://www.flotcharts.org) | `FlotChartsAsset`
+excanvas | `ExcanvasAsset`
 Flot tooltip | `pub\FlotTooltipAsset`  |
-[FullCalendar](http://fullcalendar.io) | `pub\FullCalendarAsset`  | `cdn\FullCalendarAsset`
-[Holder.js](http://imsky.github.io/holder/) | `pub\HolderAsset`  | `cdn\HolderAsset`
-[metisMenu](https://github.com/onokumus/metisMenu) | `pub\MetisMenuAsset`  | `cdn\MetisMenuAsset`
-[Moment.js](http://momentjs.com/) | `pub\MomentAsset`  | `cdn\MomentAsset`
-[MomentTimezone](http://momentjs.com/timezone/) | `pub\MomentTimezoneAsset`  | `cdn\MomentTimezoneAsset`
-[Morris.JS](http://morrisjs.github.io/morris.js/) | `pub\MorrisAsset`  | `cdn\MorrisAsset`
-[Raphaël](http://raphaeljs.com) | `pub\RaphaelAsset`  | `cdn\RaphaelAsset`
-[SweetAlert](http://t4t5.github.io/sweetalert/) | `pub\SweetAlertAsset`  | `cdn\SweetAlertAsset`
-[html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `pub\Html5shivAsset`  | `cdn\Html5shivAsset`
+[FullCalendar](http://fullcalendar.io) | `FullCalendarAsset`
+[Holder.js](http://imsky.github.io/holder/) | `HolderAsset`
+[metisMenu](https://github.com/onokumus/metisMenu) | `MetisMenuAsset`
+[Moment.js](http://momentjs.com/) | `MomentAsset`
+[MomentTimezone](http://momentjs.com/timezone/) | `MomentTimezoneAsset`
+[Morris.JS](http://morrisjs.github.io/morris.js/) | `MorrisAsset`
+[Raphaël](http://raphaeljs.com) | `RaphaelAsset`
+[SweetAlert](http://t4t5.github.io/sweetalert/) | `SweetAlertAsset`
+[html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `Html5shivAsset`
 
-
+The asset collection uses a component to allow using either published assets or assets from CDNs.
 
 Installation
 ------------
@@ -49,10 +49,19 @@ to the requires section of your `composer.json` file & p2y2assetCollection will 
 Usage
 -----
 
+First add these lines to the `components` section of your config file.
+
+```
+	'P2AssetCollection' => [
+		'class' => 'p2made\assets\P2AssetCollection',
+		'useCdn' => true, // false or not set to use published assets
+	],
+```
+
 Register assets in views with:
 
 ```
-	p2made\assets\pub\AssetNameAsset::register($this);
+	p2made\assets\AssetNameAsset::register($this);
 ```
 
 & as a dependancy in assets with:
@@ -60,17 +69,11 @@ Register assets in views with:
 ```
 	public $depends = [
 		// ...
-		'p2made\assets\pub\AssetNameAsset',
+		'p2made\assets\AssetNameAsset',
 		// ...
 	];
 ```
 
-There are 2 versions of most AssetBundles, the default one publishes the assets to your `web\assets` folder, & the other pulls the assets from a CDN (most commonly cdnjs.com).
-p2y2sweetAlertAsset contains 2 versions of the asset bundle,
-
-To use the CDNs simply use `cdn\AssetNameAsset` *instead of* `pub\AssetNameAsset`.
-
-For usage of the resources see their web pages.
-
+For usage of the asset resources see their web pages.
 
 
