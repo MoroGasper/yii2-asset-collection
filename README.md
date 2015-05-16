@@ -4,21 +4,21 @@ P2AssetCollection
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
 Resource | Asset Class
-------------------------- | -------------------------
-[Bootstrap Social](https://github.com/lipis/bootstrap-social) | `BootstrapSocialAsset`
-[dataTables](http://datatables.net) | `DataTablesAsset`
-[Flot Charts](http://www.flotcharts.org) | `FlotChartsAsset`
-excanvas | `ExcanvasAsset`
-Flot tooltip | `pub\FlotTooltipAsset`  |
-[FullCalendar](http://fullcalendar.io) | `FullCalendarAsset`
-[Holder.js](http://imsky.github.io/holder/) | `HolderAsset`
-[metisMenu](https://github.com/onokumus/metisMenu) | `MetisMenuAsset`
-[Moment.js](http://momentjs.com/) | `MomentAsset`
-[MomentTimezone](http://momentjs.com/timezone/) | `MomentTimezoneAsset`
-[Morris.JS](http://morrisjs.github.io/morris.js/) | `MorrisAsset`
-[Raphaël](http://raphaeljs.com) | `RaphaelAsset`
-[SweetAlert](http://t4t5.github.io/sweetalert/) | `SweetAlertAsset`
-[html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `Html5shivAsset`
+-------- | -----------
+[Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
+[dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
+[Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
+excanvas | `p2made\assets\ExcanvasAsset`
+Flot tooltip | `p2made\assets\FlotTooltipAsset` |
+[FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset`
+[Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
+[metisMenu](https://github.com/onokumus/metisMenu) | `p2made\assets\MetisMenuAsset`
+[Moment.js](http://momentjs.com/) | `p2made\assets\MomentAsset`
+[MomentTimezone](http://momentjs.com/timezone/) | `p2made\assets\MomentTimezoneAsset`
+[Morris.JS](http://morrisjs.github.io/morris.js/) | `p2made\assets\MorrisAsset`
+[Raphaël](http://raphaeljs.com) | `p2made\assets\RaphaelAsset`
+[SweetAlert](http://t4t5.github.io/sweetalert/) | `p2made\assets\SweetAlertAsset`
+[html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\Html5shivAsset`
 
 The asset collection uses a component to allow using either published assets or assets from CDNs.
 
@@ -75,5 +75,22 @@ Register assets in views with:
 ```
 
 For usage of the asset resources see their web pages.
+
+Sources
+-------
+
+In order of preference, the following sources are used for published assets...
+
+- a trusted `composer` package as a dependancy
+- a trusted `bower` package as a dependancy
+- a trusted `npm` package as a dependancy
+- downloaded files included in this package
+
+In order of preference, the CDNs used are...
+
+- the vendor CDN
+- [cdnjs](https://cdnjs.com/)
+- [jsDelivr](http://www.jsdelivr.com/)
+
 
 
