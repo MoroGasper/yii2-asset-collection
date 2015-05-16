@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class SweetAlertAsset extends P2AssetBundle
 {
-	private $assetName = 'sweetAlert';
+	private $bundleName = 'sweetAlert';
 
 	/**
 	 * @inherit doc

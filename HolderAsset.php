@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class HolderAsset extends P2AssetBundle
 {
-	private $assetName = 'holder';
+	private $bundleName = 'holder';
 
 	/**
 	 * @inherit doc

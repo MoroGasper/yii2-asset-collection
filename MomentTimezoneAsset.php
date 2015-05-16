@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class MomentTimezoneAsset extends P2AssetBundle
 {
-	private $assetName = 'moment-timezone';
+	private $bundleName = 'moment-timezone';
 
 	/**
 	 * @inherit doc

@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class MomentAsset extends P2AssetBundle
 {
-	private $assetName = 'moment';
+	private $bundleName = 'moment';
 
 	/**
 	 * @inherit doc

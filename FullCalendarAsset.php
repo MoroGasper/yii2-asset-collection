@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class FullCalendarAsset extends P2AssetBundle
 {
-	private $assetName = 'fullCalendar';
+	private $bundleName = 'fullCalendar';
 
 	/**
 	 * @inherit doc

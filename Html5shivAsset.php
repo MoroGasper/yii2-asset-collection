@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class Html5shivAsset extends P2AssetBundle
 {
-	private $assetName = 'html5shiv';
+	private $bundleName = 'html5shiv';
 
 	/**
 	 * @inherit doc

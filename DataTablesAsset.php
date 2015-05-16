@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class DataTablesAsset extends P2AssetBundle
 {
-	private $assetName = 'dataTables';
+	private $bundleName = 'dataTables';
 
 	/**
 	 * @inherit doc

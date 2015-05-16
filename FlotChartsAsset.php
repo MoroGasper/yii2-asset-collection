@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class FlotChartsAsset extends P2AssetBundle
 {
-	private $assetName = 'flot';
+	private $bundleName = 'flot';
 
 	/**
 	 * @inherit doc

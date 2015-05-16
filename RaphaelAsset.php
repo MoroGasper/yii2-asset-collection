@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class RaphaelAsset extends P2AssetBundle
 {
-	private $assetName = 'raphael';
+	private $bundleName = 'raphael';
 
 	/**
 	 * @inherit doc

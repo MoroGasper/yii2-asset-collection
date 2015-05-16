@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class MetisMenuAsset extends P2AssetBundle
 {
-	private $assetName = 'metisMenu';
+	private $bundleName = 'metisMenu';
 
 	/**
 	 * @inherit doc

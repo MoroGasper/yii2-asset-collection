@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class MorrisAsset extends P2AssetBundle
 {
-	private $assetName = 'morris';
+	private $bundleName = 'morris';
 
 	/**
 	 * @inherit doc

@@ -13,7 +13,7 @@ namespace p2made\assets;
 
 class ExcanvasAsset extends P2AssetBundle
 {
-	private $assetName = 'excanvas';
+	private $bundleName = 'excanvas';
 
 	/**
 	 * @inherit doc
