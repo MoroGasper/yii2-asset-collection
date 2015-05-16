@@ -22,7 +22,7 @@ class MetisMenuAsset extends P2AssetBundle
 	{
 		$this->sourcePath = $this->assetSourcePath($this->bundleName);
 		$this->css = $this->assetItem($this->bundleName, 'Css');
-		$this->Js  = $this->assetItem($this->bundleName, 'Js');
+		$this->js  = $this->assetItem($this->bundleName, 'Js');
 
 		parent::init();
 	}

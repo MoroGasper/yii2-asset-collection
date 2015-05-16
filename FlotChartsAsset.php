@@ -21,7 +21,7 @@ class FlotChartsAsset extends P2AssetBundle
 	public function init()
 	{
 		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->Js  = $this->assetItem($this->bundleName, 'Js');
+		$this->js  = $this->assetItem($this->bundleName, 'Js');
 
 		parent::init();
 	}
