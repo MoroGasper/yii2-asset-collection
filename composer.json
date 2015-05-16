@@ -29,6 +29,8 @@
 
     "require": {
         "yiisoft/yii2": "2.0.*",
+        "yiisoft/yii2-jui": "*",
+        "bower-asset/fullcalendar" : "2.3.*",
         "bower-asset/moment" : "*",
         "bower-asset/moment-timezone" : "*",
         "datatables/datatables": "1.*",
