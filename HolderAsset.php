@@ -1,6 +1,6 @@
 <?php
 /**
- * cdn/SweetAlertAsset.php
+ * HolderAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -11,17 +11,20 @@
 
 namespace p2made\assets;
 
-class SweetAlertAsset extends \yii\web\AssetBundle
+class HolderAsset extends P2AssetBundle
 {
-	public $sourcePath = null;
+	private $assetName = 'holder';
 
-	public $css = [
-		'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.css',
-	];
+	/**
+	 * @inherit doc
+	 */
+	public function init()
+	{
+		$this->sourcePath = $this->assetSourcePath($this->bundleName);
+		$this->Js  = $this->assetItem($this->bundleName, 'Js');
 
-	public $js = [
-		'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.min.js',
-	];
+		parent::init();
+	}
 
 	public $depends = [
 		'yii\web\YiiAsset',

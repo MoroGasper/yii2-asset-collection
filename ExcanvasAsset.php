@@ -1,6 +1,6 @@
 <?php
 /**
- * pub/ExcanvasAsset.php
+ * ExcanvasAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -9,17 +9,22 @@
  *
  */
 
-namespace p2made\assets\pub;
+namespace p2made\assets;
 
-class ExcanvasAsset extends \yii\web\AssetBundle
+class ExcanvasAsset extends P2AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/flot-0.8.3';
+	private $assetName = 'excanvas';
 
-	public $css = [];
+	/**
+	 * @inherit doc
+	 */
+	public function init()
+	{
+		$this->sourcePath = $this->assetSourcePath($this->bundleName);
+		$this->Js  = $this->assetItem($this->bundleName, 'Js');
 
-	public $js = [
-		'excanvas.min.js',
-	];
+		parent::init();
+	}
 
 	public $jsOptions = [
 		'condition' => 'lte IE9'
