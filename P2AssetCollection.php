@@ -157,7 +157,7 @@ class P2AssetCollection extends Component
 			],
 		),
 		'sweetAlert' => array(
-			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/sweetalert-0.5.0/dist',
+			'sourcePath' => '@bower/sweetalert/lib',
 			'pubCss' => [
 				'sweetalert.css',
 			],

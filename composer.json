@@ -33,6 +33,7 @@
         "bower-asset/fullcalendar" : "2.3.*",
         "bower-asset/moment" : "*",
         "bower-asset/moment-timezone" : "*",
+        "bower-asset/sweetalert" : "*",
         "datatables/datatables": "1.*",
         "imsky/holder" : "*",
         "onokumus/metismenu": "2.*",
