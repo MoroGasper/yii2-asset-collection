@@ -11,7 +11,7 @@
 
 namespace p2made\assets;
 
-class FlotTooltipAsset extends p2made\assets\P2AssetBundle
+class FlotTooltipAsset extends \yii\web\AssetBundle
 {
 	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/flot.tooltip';
 

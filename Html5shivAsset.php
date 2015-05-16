@@ -11,13 +11,20 @@
 
 namespace p2made\assets;
 
-class Html5shivAsset extends p2made\assets\P2AssetBundle
+class Html5shivAsset extends P2AssetBundle
 {
 	private $assetName = 'html5shiv';
 
-	public $sourcePath = $this->assetSourcePath($assetName);
+	/**
+	 * @inherit doc
+	 */
+	public function init()
+	{
+		$this->sourcePath = $this->assetSourcePath($this->bundleName);
+		$this->Js  = $this->assetItem($this->bundleName, 'Js');
 
-	public $js = $this->assetJs($assetName);
+		parent::init();
+	}
 
 	public $jsOptions = [
 		'condition' => 'lte IE9'

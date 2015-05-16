@@ -11,11 +11,18 @@
 
 namespace p2made\assets;
 
-class MomentTimezoneAsset extends p2made\assets\P2AssetBundle
+class MomentTimezoneAsset extends P2AssetBundle
 {
 	private $assetName = 'moment-timezone';
 
-	public $sourcePath = $this->assetSourcePath($assetName);
+	/**
+	 * @inherit doc
+	 */
+	public function init()
+	{
+		$this->sourcePath = $this->assetSourcePath($this->bundleName);
+		$this->Js  = $this->assetItem($this->bundleName, 'Js');
 
-	public $js = $this->assetJs($assetName);
+		parent::init();
+	}
 }

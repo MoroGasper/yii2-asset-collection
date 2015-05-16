@@ -11,35 +11,20 @@
 
 namespace p2made\assets;
 
-class P2AssetBundle extends p2made\assets\P2AssetBundle
+class P2AssetBundle extends \yii\web\AssetBundle
 {
-	private $assets = Yii::$app->P2AssetCollection;
-	private $useCdn = $assets->useCdn;
+	public $sourcePath = [];
+	public $css = [];
+	public $js  = [];
+	public $img = [];
 
 	protected function assetSourcePath($bundleName)
 	{
-		if($this->useCdn) {
-			return null;
-		}
-
-		return $this->assets->data[$bundleName]['sourcePath'];
+		return \Yii::$app->P2AssetCollection->assetSourcePath($bundleName);
 	}
 
-	protected function assetCss($bundleName)
+	protected function assetItem($bundleName, $assetType)
 	{
-		$itemName = ($this->useCdn ? 'cdnCss' : 'pubCss');
-		return $this->assets->data[$bundleName][$itemName];
-	}
-
-	protected function assetJs($bundleName)
-	{
-		$itemName = ($this->useCdn ? 'cdnJs' : 'pubJs');
-		return $this->assets->data[$bundleName][$itemName];
-	}
-
-	protected function assetImg($bundleName)
-	{
-		$itemName = ($this->useCdn ? 'cdnImg' : 'cdnImg');
-		return $this->assets->data[$bundleName][$itemName];
+		return \Yii::$app->P2AssetCollection->assetItem($bundleName, $assetType);
 	}
 }

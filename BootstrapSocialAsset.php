@@ -11,13 +11,22 @@
 
 namespace p2made\assets;
 
-class BootstrapSocialAsset extends p2made\assets\P2AssetBundle
+class BootstrapSocialAsset extends P2AssetBundle
 {
-	private $assetName = 'bootstrap-social';
+	private $bundleName = 'bootstrap-social';
 
-	public $sourcePath = $this->assetSourcePath($assetName);
+	/**
+	 * @inherit doc
+	 */
+	public function init()
+	{
+		$this->sourcePath = $this->assetSourcePath($this->bundleName);
+		$this->css = $this->assetItem($this->bundleName, 'Css');
+		//$this->Js  = $this->assetItem($this->bundleName, 'Js');
+		//$this->Img = $this->assetItem($this->bundleName, 'Img');
 
-	public $css = $this->assetCss($assetName);
+		parent::init();
+	}
 
 	public $depends = [
 		'yii\web\YiiAsset',

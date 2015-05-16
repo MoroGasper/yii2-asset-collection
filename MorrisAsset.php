@@ -11,15 +11,21 @@
 
 namespace p2made\assets;
 
-class MorrisAsset extends p2made\assets\P2AssetBundle
+class MorrisAsset extends P2AssetBundle
 {
 	private $assetName = 'morris';
 
-	public $sourcePath = $this->assetSourcePath($assetName);
+	/**
+	 * @inherit doc
+	 */
+	public function init()
+	{
+		$this->sourcePath = $this->assetSourcePath($this->bundleName);
+		$this->css = $this->assetItem($this->bundleName, 'Css');
+		$this->Js  = $this->assetItem($this->bundleName, 'Js');
 
-	public $css = $this->assetCss($assetName);
-
-	public $js = $this->assetJs($assetName);
+		parent::init();
+	}
 
 	public $depends = [
 		'yii\web\YiiAsset',

@@ -11,13 +11,20 @@
 
 namespace p2made\assets;
 
-class FlotChartsAsset extends p2made\assets\P2AssetBundle
+class FlotChartsAsset extends P2AssetBundle
 {
 	private $assetName = 'flot';
 
-	public $sourcePath = $this->assetSourcePath($assetName);
+	/**
+	 * @inherit doc
+	 */
+	public function init()
+	{
+		$this->sourcePath = $this->assetSourcePath($this->bundleName);
+		$this->Js  = $this->assetItem($this->bundleName, 'Js');
 
-	public $js = $this->assetJs($assetName);
+		parent::init();
+	}
 
 	public $depends = [
 		'yii\web\YiiAsset',

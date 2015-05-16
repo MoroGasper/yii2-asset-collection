@@ -99,6 +99,17 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/holder/2.7.1/holder.min.js',
 			],
 		),
+		'html5shiv' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets',
+			'pubJs'  => [
+				'html5shiv-3.7.2/dist/html5shiv.min.js',
+				'Respond-1.4.2/dest/respond.min.js',
+			],
+			'cdnJs'  => [
+				'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js',
+				'//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js',
+			],
+		),
 		'metisMenu' => array(
 			'sourcePath' => '@vendor/onokumus/metismenu/dist',
 			'pubCss' => [
@@ -171,22 +182,6 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.min.js',
 			],
 		),
-
-		'html5shiv' => array(
-			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets',
-			'pubJs'  => [
-				'html5shiv-3.7.2/dist/html5shiv.min.js',
-				'Respond-1.4.2/dest/respond.min.js',
-			],
-			'cdnJs'  => [
-				'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js',
-				'//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js',
-			],
-		),
-	);
-}
-
-/* example asset bundle */
 /*
 		'bundleName' => array(
 			'sourcePath' => '',
@@ -210,3 +205,20 @@ class P2AssetCollection extends Component
 			],
 		),
 */
+	);
+
+	public function assetSourcePath($bundleName)
+	{
+		if($this->useCdn) {
+			return null;
+		}
+
+		return $this->data[$bundleName]['sourcePath'];
+	}
+
+	public function assetItem($bundleName, $assetType)
+	{
+		$itemName = ($this->useCdn ? 'cdn' : 'pub') . $assetType;
+		return $this->data[$bundleName][$itemName];
+	}
+}
