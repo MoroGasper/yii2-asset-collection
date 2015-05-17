@@ -1,6 +1,6 @@
 <?php
 /**
- * BootstrapSocialAsset.php
+ * AnimateAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -11,9 +11,9 @@
 
 namespace p2made\assets;
 
-class BootstrapSocialAsset extends P2AssetBundle
+class AnimateAsset extends P2AssetBundle
 {
-	private $bundleName = 'bootstrap-social';
+	private $bundleName = 'animate';
 
 	/**
 	 * @inherit doc

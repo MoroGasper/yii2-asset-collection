@@ -1,10 +1,11 @@
-P2AssetCollection v2.3.0
+P2AssetCollection v2.4.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
 Resource | Asset Class
 -------- | -----------
+[Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
 [dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
 [Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`

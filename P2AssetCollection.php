@@ -21,6 +21,15 @@ class P2AssetCollection extends Component
 	public $useCdn = false;
 
 	protected $resourceData = array(
+		'animate' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/Animate_3.2.6',
+			'pubCss' => [
+				'animate.min.css',
+			],
+			'cdnCss' => [
+				'//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css',
+			],
+		),
 		'bootstrap-social' => array(
 			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/bootstrap-social',
 			'pubCss' => [
@@ -208,9 +217,6 @@ class P2AssetCollection extends Component
 			],
 		),
 	);
-
-
-
 
 	public function assetSourcePath($bundleName)
 	{
