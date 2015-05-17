@@ -147,6 +147,21 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js',
 			],
 		),
+		'prettyPhoto' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/prettyPhoto_3.1.6',
+			'pubCss' => [
+				'css/prettyPhoto.min.css',
+			],
+			'cdnCss' => [
+				'//cdn.jsdelivr.net/prettyphoto/3.1.5/prettyPhoto.css',
+			],
+			'pubJs'  => [
+				'js/jquery.prettyPhoto.min.js',
+			],
+			'cdnJs'  => [
+				'//cdn.jsdelivr.net/prettyphoto/3.1.5/jquery.prettyPhoto.js',
+			],
+		),
 		'raphael' => array(
 			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/raphael-2.1.2',
 			'pubJs'  => [
@@ -184,6 +199,9 @@ class P2AssetCollection extends Component
 			],
 		),
 	);
+
+
+
 
 	public function assetSourcePath($bundleName)
 	{
