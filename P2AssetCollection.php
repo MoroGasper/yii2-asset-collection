@@ -171,13 +171,13 @@ class P2AssetCollection extends Component
 				'css/prettyPhoto.min.css',
 			],
 			'cdnCss' => [
-				'//cdn.jsdelivr.net/prettyphoto/3.1.5/prettyPhoto.css',
+				'//cdn.jsdelivr.net/prettyphoto/3.1.5/css/prettyPhoto.css',
 			],
 			'pubJs'  => [
 				'js/jquery.prettyPhoto.min.js',
 			],
 			'cdnJs'  => [
-				'//cdn.jsdelivr.net/prettyphoto/3.1.5/jquery.prettyPhoto.js',
+				'//cdn.jsdelivr.net/prettyphoto/3.1.5/js/jquery.prettyPhoto.js',
 			],
 		),
 		'raphael' => array(
