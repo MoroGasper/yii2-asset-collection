@@ -1,4 +1,4 @@
-P2AssetCollection v2.1.0
+P2AssetCollection v2.2.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -17,6 +17,7 @@ Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [MomentTimezone](http://momentjs.com/timezone/) | `p2made\assets\MomentTimezoneAsset`
 [Morris.JS](http://morrisjs.github.io/morris.js/) | `p2made\assets\MorrisAsset`
 [prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/) | `p2made\assets\PrettyPhotoAsset`
+[prettySociable](http://www.no-margin-for-errors.com/projects/prettysociable-mashable-like-sharing/) | `p2made\assets\PrettySociableAsset`
 [Raphaël](http://raphaeljs.com) | `p2made\assets\RaphaelAsset`
 [SweetAlert](http://t4t5.github.io/sweetalert/) | `p2made\assets\SweetAlertAsset`
 [html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\Html5shivAsset`
@@ -89,7 +90,7 @@ In order of preference, the following sources are used for published assets...
 
 In order of preference, the CDNs used are...
 
-- the vendor CDN
+- vendor CDN
 - [cdnjs](https://cdnjs.com/)
 - [jsDelivr](http://www.jsdelivr.com/)
 
