@@ -1,4 +1,4 @@
-P2AssetCollection v2.2.0
+P2AssetCollection v2.3.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -12,6 +12,7 @@ excanvas | `p2made\assets\ExcanvasAsset`
 Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset`
 [Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
+[Isotope](http://isotope.metafizzy.co) | `p2made\assets\IsotopeAsset`
 [metisMenu](https://github.com/onokumus/metisMenu) | `p2made\assets\MetisMenuAsset`
 [Moment.js](http://momentjs.com/) | `p2made\assets\MomentAsset`
 [MomentTimezone](http://momentjs.com/timezone/) | `p2made\assets\MomentTimezoneAsset`

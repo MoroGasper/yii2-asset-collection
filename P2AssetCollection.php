@@ -99,6 +99,15 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/holder/2.7.1/holder.min.js',
 			],
 		),
+		'isotope' => array(
+			'sourcePath' => '@bower/isotope/dist',
+			'pubJs'  => [
+				'isotope.pkgd.min.js',
+			],
+			'cdnJs'  => [
+				'//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js',
+			],
+		),
 		'metisMenu' => array(
 			'sourcePath' => '@vendor/onokumus/metismenu/dist',
 			'pubCss' => [
