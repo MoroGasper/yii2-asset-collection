@@ -1,4 +1,4 @@
-P2AssetCollection v2.5.0
+P2AssetCollection v2.5.1
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -66,7 +66,7 @@ First add these lines to the `components` section of your config file.
 Register assets in views with:
 
 ```
-	p2made\assets\AssetNameAsset::register($this);
+p2made\assets\AssetNameAsset::register($this);
 ```
 
 & as a dependancy in assets with:
@@ -77,6 +77,54 @@ Register assets in views with:
 		'p2made\assets\AssetNameAsset',
 		// ...
 	];
+```
+
+The `register` lines for all assets...
+
+```
+p2made\assets\AnimateAsset::register($this);
+p2made\assets\BootstrapSocialAsset::register($this);
+p2made\assets\DataTablesAsset::register($this);
+p2made\assets\ExcanvasAsset::register($this);
+p2made\assets\FlotChartsAsset::register($this);
+p2made\assets\FlotTooltipAsset::register($this);
+p2made\assets\FontAwesomeAsset::register($this);
+p2made\assets\FullCalendarAsset::register($this);
+p2made\assets\HolderAsset::register($this);
+p2made\assets\IsotopeAsset::register($this);
+p2made\assets\MetisMenuAsset::register($this);
+p2made\assets\MomentAsset::register($this);
+p2made\assets\MomentTimezoneAsset::register($this);
+p2made\assets\MorrisAsset::register($this);
+p2made\assets\PrettyPhotoAsset::register($this);
+p2made\assets\PrettySociableAsset::register($this);
+p2made\assets\RaphaelAsset::register($this);
+p2made\assets\SweetAlertAsset::register($this);
+p2made\assets\Html5shivAsset::register($this);
+```
+
+& the dependency lines for all assets...
+
+```
+		'p2made\assets\AnimateAsset',
+		'p2made\assets\BootstrapSocialAsset',
+		'p2made\assets\DataTablesAsset',
+		'p2made\assets\ExcanvasAsset',
+		'p2made\assets\FlotChartsAsset',
+		'p2made\assets\FlotTooltipAsset',
+		'p2made\assets\FontAwesomeAsset',
+		'p2made\assets\FullCalendarAsset',
+		'p2made\assets\HolderAsset',
+		'p2made\assets\IsotopeAsset',
+		'p2made\assets\MetisMenuAsset',
+		'p2made\assets\MomentAsset',
+		'p2made\assets\MomentTimezoneAsset',
+		'p2made\assets\MorrisAsset',
+		'p2made\assets\PrettyPhotoAsset',
+		'p2made\assets\PrettySociableAsset',
+		'p2made\assets\RaphaelAsset',
+		'p2made\assets\SweetAlertAsset',
+		'p2made\assets\Html5shivAsset',
 ```
 
 For usage of the asset resources see their web pages.

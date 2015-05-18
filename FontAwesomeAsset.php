@@ -29,6 +29,5 @@ class FontAwesomeAsset extends P2AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'p2made\assets\FontAwesomeAsset',
 	];
 }
