@@ -5,7 +5,6 @@
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
  * @package p2made/yii2-asset-collection
- * @version 0.1.0
  *
  */
 
@@ -80,6 +79,15 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.pie.min.js',
 				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.min.js',
 				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.time.min.js',
+			],
+		),
+		'font-awesome' => array(
+			'sourcePath' => '@vendor/fortawesome/font-awesome',
+			'pubCss'  => [
+				'css/font-awesome.min.css',
+			],
+			'cdnCss'  => [
+				'//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
 			],
 		),
 		'fullCalendar' => array(

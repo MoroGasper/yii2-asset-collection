@@ -5,7 +5,6 @@
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
  * @package p2made/yii2-asset-collection
- * @version 0.1.0
  *
  */
 
@@ -30,6 +29,6 @@ class AnimateAsset extends P2AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
-		'\rmrevin\yii\fontawesome\AssetBundle',
+		'p2made\assets\FontAwesomeAsset',
 	];
 }

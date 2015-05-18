@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "2.4.1",
+    "version": "2.5.0",
     "minimum-stability": "dev",
 
     "require": {
@@ -36,10 +36,10 @@
         "bower-asset/moment-timezone" : "*",
         "bower-asset/sweetalert" : "*",
         "datatables/datatables": "1.*",
+        "fortawesome/font-awesome": "4.3.*",
         "imsky/holder" : "*",
         "onokumus/metismenu": "2.*",
-        "philippfrenzel/yii2fullcalendar": "*",
-        "rmrevin/yii2-fontawesome": "2.9.*"
+        "philippfrenzel/yii2fullcalendar": "*"
     },
     "autoload": {
         "psr-4": {
