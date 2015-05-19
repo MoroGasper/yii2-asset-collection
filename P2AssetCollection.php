@@ -240,6 +240,36 @@ class P2AssetCollection extends Component
 		$itemName = ($this->useCdn ? 'cdn' : 'pub') . $assetType;
 		return $this->resourceData[$bundleName][$itemName];
 	}
+
+	/**
+	 * @inheritdoc
+	 */
+	public function init()
+	{
+		parent::init();
+
+		if($this->useCdn !== true) {
+			return;
+		}
+
+		Yii::$app->assetManager->bundles['yii\web\JqueryAsset'] = [
+			'sourcePath' => null,
+			'js' => ['//code.jquery.com/jquery-1.11.2.min.js'],
+		];
+		Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
+			'sourcePath' => null,
+			'css' => ['//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'],
+		];
+		Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapPluginAsset'] = [
+			'sourcePath' => null,
+			'js' => ['//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'],
+		];
+		Yii::$app->assetManager->bundles['yii\jui\JuiAsset'] = [
+			'sourcePath' => null,
+			'css' => ['//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css'],
+			'js' => ['//code.jquery.com/ui/1.11.2/jquery-ui.min.js'],
+		];
+	}
 }
 
 /* example resource */

@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "2.5.1",
+    "version": "2.5.2",
     "minimum-stability": "dev",
 
     "require": {
