@@ -101,6 +101,7 @@ p2made\assets\PrettyPhotoAsset::register($this);
 p2made\assets\PrettySociableAsset::register($this);
 p2made\assets\RaphaelAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
+p2made\assets\TimelineAsset::register($this);
 p2made\assets\Html5shivAsset::register($this);
 ```
 
@@ -125,6 +126,7 @@ p2made\assets\Html5shivAsset::register($this);
 		'p2made\assets\PrettySociableAsset',
 		'p2made\assets\RaphaelAsset',
 		'p2made\assets\SweetAlertAsset',
+		'p2made\assets\TimelineAsset',
 		'p2made\assets\Html5shivAsset',
 ```
 
