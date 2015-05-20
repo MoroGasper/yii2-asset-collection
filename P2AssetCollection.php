@@ -21,7 +21,7 @@ class P2AssetCollection extends Component
 
 	protected $resourceData = array(
 		'animate' => array(
-			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/Animate_3.2.6',
+			'sourcePath' => '@bower/animate.css',
 			'pubCss' => [
 				'animate.min.css',
 			],
@@ -30,7 +30,7 @@ class P2AssetCollection extends Component
 			],
 		),
 		'bootstrap-social' => array(
-			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/bootstrap-social',
+			'sourcePath' => '@bower/bootstrap-social',
 			'pubCss' => [
 				'bootstrap-social.css',
 			],
