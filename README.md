@@ -1,4 +1,4 @@
-P2AssetCollection v2.10.0
+P2AssetCollection v2.11.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -28,6 +28,7 @@ Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [Raphaël](http://raphaeljs.com) | `p2made\assets\RaphaelAsset`
 [SweetAlert](http://t4t5.github.io/sweetalert/) | `p2made\assets\SweetAlertAsset`
 timeline | `p2made\assets\TimelineAsset`
+[WOW.js](http://mynameismatthieu.com/WOW/) | `p2made\assets\WowAsset`
 [html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\Html5shivAsset`
 
 The asset collection uses a component to allow using either published assets or assets from CDNs.

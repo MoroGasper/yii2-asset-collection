@@ -248,6 +248,15 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.min.js',
 			],
 		),
+		'wow' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/WOW/dist',
+			'pubJs'  => [
+				'wow.min.js',
+			],
+			'cdnJs'  => [
+				'//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
+			],
+		),
 
 		'html5shiv' => array(
 			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets',
