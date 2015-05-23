@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "2.7.0",
+    "version": "2.8.0",
     "minimum-stability": "dev",
 
     "require": {
@@ -35,6 +35,7 @@
         "bower-asset/bootstrap-social" : ">=4.9.0",
         "bower-asset/fullcalendar" : ">=2.3.1",
         "bower-asset/isotope" : ">=2.2.0",
+        "bower-asset/masonry" : "*",
         "bower-asset/moment" : ">=2.10.2",
         "bower-asset/moment-timezone" : ">=0.3.1",
         "bower-asset/sweetalert" : ">=0.5.0",

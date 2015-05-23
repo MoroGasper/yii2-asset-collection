@@ -134,6 +134,15 @@ class P2AssetCollection extends Component
 				'http://cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
 			],
 		),
+		'masonry' => array(
+			'sourcePath' => '@bower/masonry/dist',
+			'pubJs'  => [
+				'masonry.pkgd.min.js',
+			],
+			'cdnJs'  => [
+				'//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js',
+			],
+		),
 		'metisMenu' => array(
 			'sourcePath' => '@vendor/onokumus/metismenu/dist',
 			'pubCss' => [
