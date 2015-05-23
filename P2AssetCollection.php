@@ -125,6 +125,15 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js',
 			],
 		),
+		'jquery-countTo' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/jquery-countTo',
+			'pubJs' => [
+				'jquery.countTo.js',
+			],
+			'cdnJs' => [
+				'http://cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
+			],
+		),
 		'metisMenu' => array(
 			'sourcePath' => '@vendor/onokumus/metismenu/dist',
 			'pubCss' => [
