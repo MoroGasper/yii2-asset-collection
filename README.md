@@ -1,4 +1,4 @@
-P2AssetCollection v2.9.0
+P2AssetCollection v2.10.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -9,6 +9,7 @@ Resource | Asset Class
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
 [dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
 [excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
+[FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
 [Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
 Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`

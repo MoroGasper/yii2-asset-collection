@@ -66,6 +66,15 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
 			],
 		),
+		'fitvids' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/FitVids.js',
+			'pubJs'  => [
+				'jquery.fitvids.js',
+			],
+			'cdnJs'  => [
+				'//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js',
+			],
+		),
 		'flot' => array(
 			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/flot-0.8.3',
 			'pubJs'  => [
