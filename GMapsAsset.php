@@ -1,6 +1,6 @@
 <?php
 /**
- * JqueryCountToAsset.php
+ * GMapsAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,9 +10,9 @@
 
 namespace p2made\assets;
 
-class JqueryCountToAsset extends P2AssetBundle
+class GMapsAsset extends P2AssetBundle
 {
-	private $bundleName = 'jquery-countTo';
+	private $bundleName = 'gmaps';
 
 	/**
 	 * @inherit doc
@@ -29,5 +29,6 @@ class JqueryCountToAsset extends P2AssetBundle
 		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapAsset',
 		'yii\web\JqueryAsset',
+		'p2made\assets\GMapsApiAsset',
 	];
 }

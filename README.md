@@ -1,4 +1,4 @@
-P2AssetCollection v2.8.0
+P2AssetCollection v2.9.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -13,6 +13,7 @@ Resource | Asset Class
 Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`
 [FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset`
+[GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
 [Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
 [Isotope](http://isotope.metafizzy.co) | `p2made\assets\IsotopeAsset`
 [jquery-countTo](https://github.com/mhuggins/jquery-countTo) | `p2made\assets\JqueryCountToAsset`

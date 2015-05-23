@@ -107,6 +107,15 @@ class P2AssetCollection extends Component
 				'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js',
 			],
 		),
+		'gmaps' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/gmaps',
+			'pubJs'  => [
+				'gmaps.js',
+			],
+			'cdnJs'  => [
+				'//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js',
+			],
+		),
 		'holder' => array(
 			'sourcePath' => '@vendor/imsky/holder',
 			'pubJs'  => [
