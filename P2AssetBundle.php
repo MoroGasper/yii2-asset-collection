@@ -448,7 +448,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		),
 
 		'html5shiv' => array(
-			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets',
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/shiv',
 			'pubJs'  => [
 				'html5shiv-3.7.2/dist/html5shiv.min.js',
 				'Respond-1.4.2/dest/respond.min.js',
@@ -456,6 +456,15 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			'cdnJs'  => [
 				'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js',
 				'//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js',
+			],
+		),
+		'printshiv' => array(
+			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/shiv',
+			'pubJs'  => [
+				'html5shiv-printshiv.min.js',
+			],
+			'cdnJs'  => [
+				'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/printshiv.min.js',
 			],
 		),
 	);

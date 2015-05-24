@@ -1,4 +1,4 @@
-P2AssetCollection v2.15.0
+P2AssetCollection v2.16.0
 =========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -34,8 +34,9 @@ Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 timeline | `p2made\assets\TimelineAsset`
 [WOW.js](http://mynameismatthieu.com/WOW/) | `p2made\assets\WowAsset`
 [html5shiv](https://github.com/afarkas/html5shiv) & [Respond.JS](https://github.com/scottjehl/Respond) | `p2made\assets\Html5shivAsset`
+[printshiv](https://github.com/afarkas/html5shiv) | `p2made\assets\PrintShivAsset`
 
-The asset collection uses a component to allow using either published assets or assets from CDNs.
+The asset collection gives the option of using either published assets or assets from CDNs.
 
 Installation
 ------------
@@ -133,6 +134,7 @@ p2made\assets\SweetAlertAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
 p2made\assets\WowAsset::register($this);
 p2made\assets\Html5shivAsset::register($this);
+p2made\assets\PrintShivAsset::register($this);
 ```
 
 & the dependency lines for all assets...
@@ -167,6 +169,7 @@ p2made\assets\Html5shivAsset::register($this);
 		'p2made\assets\TimelineAsset',
 		'p2made\assets\WowAsset',
 		'p2made\assets\Html5shivAsset',
+		'p2made\assets\PrintShivAsset',
 ```
 
 For usage of the asset resources see their web pages.
