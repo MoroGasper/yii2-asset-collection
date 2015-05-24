@@ -20,7 +20,7 @@ class BootstrapAsset extends P2AssetBundle
 	public function init()
 	{
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
-			$this->bundleName = 'bootswatch-' . \Yii::$app->params['p2assets']['bwTheme']
+			$this->bundleName = 'bootswatch-' . \Yii::$app->params['p2assets']['bwTheme'];
 		}
 
 		$this->sourcePath = $this->assetSourcePath($this->bundleName);
