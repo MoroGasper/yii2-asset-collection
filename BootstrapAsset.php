@@ -1,6 +1,6 @@
 <?php
 /**
- * Html5shivAsset.php
+ * BootstrapAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,9 +10,9 @@
 
 namespace p2made\assets;
 
-class Html5shivAsset extends P2AssetBundle
+class BootstrapAsset extends P2AssetBundle
 {
-	private $bundleName = 'html5shiv';
+	private $bundleName = 'bootstrap';
 
 	/**
 	 * @inherit doc
@@ -20,13 +20,8 @@ class Html5shivAsset extends P2AssetBundle
 	public function init()
 	{
 		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
+		$this->css = $this->cssItem($this->bundleName);
 
 		parent::init();
 	}
-
-	public $jsOptions = [
-		'condition' => 'lte IE9',
-		'position' => \yii\web\View::POS_HEAD,
-	];
 }

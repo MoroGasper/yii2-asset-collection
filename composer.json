@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "2.11.2",
+    "version": "2.12.0",
     "minimum-stability": "dev",
 
     "require": {
@@ -33,6 +33,7 @@
         "bower-asset/animate.css" : ">=3.2.6",
         "bower-asset/bootstrap" : ">=3.3.4",
         "bower-asset/bootstrap-social" : ">=4.9.0",
+        "bower-asset/bootswatch" : "*",
         "bower-asset/fullcalendar" : ">=2.3.1",
         "bower-asset/isotope" : ">=2.2.0",
         "bower-asset/masonry" : "*",

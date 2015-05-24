@@ -20,7 +20,7 @@ class BootstrapSocialAsset extends P2AssetBundle
 	public function init()
 	{
 		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->assetItem($this->bundleName, 'Css');
+		$this->css = $this->cssItem($this->bundleName);
 
 		parent::init();
 	}

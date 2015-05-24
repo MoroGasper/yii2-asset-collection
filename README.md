@@ -1,4 +1,4 @@
-P2AssetCollection v2.11.2
+P2AssetCollection v2.12.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -6,6 +6,7 @@ A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 Resource | Asset Class
 -------- | -----------
 [Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
+[Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset`, `p2made\assets\BootstrapPluginAsset`
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
 [dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
 [excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
@@ -60,13 +61,10 @@ to the requires section of your `composer.json` file & p2y2assetCollection will 
 Usage
 -----
 
-First add these lines to the `components` section of your config file.
+First add these lines to the `params` section of your config file.
 
 ```php
-	'P2AssetCollection' => [
-		'class' => 'p2made\assets\P2AssetCollection',
-		'useCdn' => true, // false or not set to use published assets
-	],
+	'p2useCdn' => true, // false or not set to use published assets
 ```
 
 Register assets in views with:
@@ -89,6 +87,8 @@ The `register` lines for all assets...
 
 ```php
 p2made\assets\AnimateAsset::register($this);
+p2made\assets\BootstrapAsset::register($this);
+p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\BootstrapSocialAsset::register($this);
 p2made\assets\DataTablesAsset::register($this);
 p2made\assets\ExcanvasAsset::register($this);
@@ -118,6 +118,8 @@ p2made\assets\Html5shivAsset::register($this);
 
 ```php
 		'p2made\assets\AnimateAsset',
+		'p2made\assets\BootstrapAsset',
+		'p2made\assets\BootstrapPluginAsset',
 		'p2made\assets\BootstrapSocialAsset',
 		'p2made\assets\DataTablesAsset',
 		'p2made\assets\ExcanvasAsset',

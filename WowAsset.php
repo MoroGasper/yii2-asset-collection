@@ -20,7 +20,7 @@ class WowAsset extends P2AssetBundle
 	public function init()
 	{
 		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->js  = $this->assetItem($this->bundleName, 'Js');
+		$this->css = $this->jsItem($this->bundleName);
 
 		parent::init();
 	}

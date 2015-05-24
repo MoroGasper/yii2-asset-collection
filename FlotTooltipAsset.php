@@ -17,6 +17,4 @@ class FlotTooltipAsset extends \yii\web\AssetBundle
 	public $js = [
 		'js/jquery.flot.tooltip.min.js',
 	];
-
-	public $depends = [];
 }

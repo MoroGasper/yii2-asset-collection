@@ -21,6 +21,4 @@ class PrettySociableAsset extends \yii\web\AssetBundle
 	public $js = [
 		'js/jquery.prettySociable.min.js',
 	];
-
-	public $depends = [];
 }
