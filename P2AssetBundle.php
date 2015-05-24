@@ -16,6 +16,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	public $css = [];
 	public $js  = [];
 	public $img = [];
+	public $depends = [];
 	public $_useCdn = false;
 
 	protected $resourceData = array(
@@ -53,6 +54,150 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			],
 			'cdnCss' => [
 				'//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.0/bootstrap-social.min.css',
+			],
+		),
+		'bootswatch-cerulean' => array(
+			'sourcePath' => '@bower/bootswatch/cerulean',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cerulean/bootstrap.min.css',
+			],
+		),
+		'bootswatch-cosmo' => array(
+			'sourcePath' => '@bower/bootswatch/cosmo',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cosmo/bootstrap.min.css',
+			],
+		),
+		'bootswatch-cyborg' => array(
+			'sourcePath' => '@bower/bootswatch/cyborg',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/cyborg/bootstrap.min.css',
+			],
+		),
+		'bootswatch-darkly' => array(
+			'sourcePath' => '@bower/bootswatch/darkly',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/darkly/bootstrap.min.css',
+			],
+		),
+		'bootswatch-flatly' => array(
+			'sourcePath' => '@bower/bootswatch/flatly',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css',
+			],
+		),
+		'bootswatch-journal' => array(
+			'sourcePath' => '@bower/bootswatch/journal',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/journal/bootstrap.min.css',
+			],
+		),
+		'bootswatch-lumen' => array(
+			'sourcePath' => '@bower/bootswatch/lumen',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/lumen/bootstrap.min.css',
+			],
+		),
+		'bootswatch-paper' => array(
+			'sourcePath' => '@bower/bootswatch/paper',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/paper/bootstrap.min.css',
+			],
+		),
+		'bootswatch-readable' => array(
+			'sourcePath' => '@bower/bootswatch/readable',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/readable/bootstrap.min.css',
+			],
+		),
+		'bootswatch-sandstone' => array(
+			'sourcePath' => '@bower/bootswatch/sandstone',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/sandstone/bootstrap.min.css',
+			],
+		),
+		'bootswatch-simplex' => array(
+			'sourcePath' => '@bower/bootswatch/simplex',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/simplex/bootstrap.min.css',
+			],
+		),
+		'bootswatch-slate' => array(
+			'sourcePath' => '@bower/bootswatch/slate',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/slate/bootstrap.min.css',
+			],
+		),
+		'bootswatch-spacelab' => array(
+			'sourcePath' => '@bower/bootswatch/spacelab',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/spacelab/bootstrap.min.css',
+			],
+		),
+		'bootswatch-superhero' => array(
+			'sourcePath' => '@bower/bootswatch/superhero',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/superhero/bootstrap.min.css',
+			],
+		),
+		'bootswatch-united' => array(
+			'sourcePath' => '@bower/bootswatch/united',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/united/bootstrap.min.css',
+			],
+		),
+		'bootswatch-yeti' => array(
+			'sourcePath' => '@bower/bootswatch/yeti',
+			'pubCss' => [
+				'bootstrap.min.css',
+			],
+			'cdnCss' => [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/yeti/bootstrap.min.css',
 			],
 		),
 		'dataTables' => array(
@@ -160,13 +305,40 @@ class P2AssetBundle extends \yii\web\AssetBundle
 				'//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js',
 			],
 		),
+		'jquery' => array(
+			'sourcePath' => '@bower/jquery/dist',
+			'pubJs' => [
+				'jquery.min.js',
+			],
+			'cdnJs' => [
+				'//code.jquery.com/jquery-1.11.3.min.js',
+			],
+		),
+		'jquery-migrate' => array(
+			'sourcePath' => '@bower/jquery-migrate',
+			'pubJs' => [
+				'jquery-migrate.min.js',
+			],
+			'cdnJs' => [
+				'//code.jquery.com/jquery-migrate-1.2.1.min.js',
+			],
+		),
 		'jquery-countTo' => array(
 			'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/jquery-countTo',
 			'pubJs' => [
 				'jquery.countTo.js',
 			],
 			'cdnJs' => [
-				'http://cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
+				'//cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
+			],
+		),
+		'jquery-ui' => array(
+			'sourcePath' => '@bower/jquery-ui',
+			'pubJs' => [
+				'jquery-ui.min.js',
+			],
+			'cdnJs' => [
+				'//code.jquery.com/ui/1.11.4/jquery-ui.min.js',
 			],
 		),
 		'masonry' => array(
@@ -297,17 +469,17 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		return $this->resourceData[$bundleName]['sourcePath'];
 	}
 
-	public function cssItem($bundleName)
+	protected function cssItem($bundleName)
 	{
 		return $this->assetItem($this->bundleName, 'Css');
 	}
 
-	public function jsItem($bundleName)
+	protected function jsItem($bundleName)
 	{
 		return $this->assetItem($this->bundleName, 'Js');
 	}
 
-	public function assetItem($bundleName, $assetType)
+	protected function assetItem($bundleName, $assetType)
 	{
 		$itemName = (P2AssetBundle::useCdn() ? 'cdn' : 'pub') . $assetType;
 		return $this->resourceData[$bundleName][$itemName];
@@ -315,8 +487,8 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 	protected static function useCdn()
 	{
-		if(isset(\Yii::$app->params['p2useCdn'])) {
-			$_useCdn = \Yii::$app->params['p2useCdn'];
+		if(isset(\Yii::$app->params['p2assets']['useCdn'])) {
+			$_useCdn = \Yii::$app->params['p2assets']['useCdn'];
 		}
 		return $_useCdn;
 	}

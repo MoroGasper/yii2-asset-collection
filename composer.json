@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "2.13.0",
+    "version": "2.15.0",
     "minimum-stability": "dev",
 
     "require": {
@@ -36,9 +36,13 @@
         "bower-asset/bootswatch" : "*",
         "bower-asset/fullcalendar" : ">=2.3.1",
         "bower-asset/isotope" : ">=2.2.0",
+        "bower-asset/jquery" : "*",
+        "bower-asset/jquery-ui" : "*",
+        "bower-asset/jquery-migrate" : "*",
         "bower-asset/masonry" : "*",
         "bower-asset/moment" : ">=2.10.2",
         "bower-asset/moment-timezone" : ">=0.3.1",
+        "bower-asset/qunit" : "*",
         "bower-asset/sweetalert" : ">=0.5.0",
         "fortawesome/font-awesome": "4.3.*",
         "imsky/holder" : "*",

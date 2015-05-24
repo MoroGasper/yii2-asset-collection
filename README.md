@@ -1,4 +1,4 @@
-P2AssetCollection v2.13.0
+P2AssetCollection v2.15.0
 =========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -18,7 +18,10 @@ Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
 [Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
 [Isotope](http://isotope.metafizzy.co) | `p2made\assets\IsotopeAsset`
+[jQuery](http://jquery.com) | `p2made\assets\JqueryAsset`
 [jquery-countTo](https://github.com/mhuggins/jquery-countTo) | `p2made\assets\JqueryCountToAsset`
+[jQuery Migrate](http://jquery.com) | `p2made\assets\JqueryMigrateAsset`
+[jQuery-ui](http://jqueryui.com) | `p2made\assets\JuiAsset`
 [Masonry](http://masonry.desandro.com) | `p2made\assets\MasonryAsset`
 [metisMenu](https://github.com/onokumus/metisMenu) | `p2made\assets\MetisMenuAsset`
 [Moment.js](http://momentjs.com/) | `p2made\assets\MomentAsset`
@@ -64,12 +67,27 @@ Usage
 First add these lines to the `params` section of your config file.
 
 ```php
-	'p2useCdn' => true, // false or not set to use published assets
+	'p2assets' => [
+		'useCdn' => true, // false or not set to use published assets
+	],
 ```
+
+You can substitute any of the themes from [Bootswatch](http://bootswatch.com) by setting:
+
+```php
+	'p2assets' => [
+		...
+		'bwTheme' = 'cerulean',
+
+	],
+```
+
+Using one of: `'cerulean'`, `'cosmo'`, `'cyborg'`, `'darkly'`, `'flatly'`, `'journal'`, `'lumen'`, `'paper'`, `'readable'`, `'sandstone'`, `'simplex'`, `'slate'`, `'spacelab'`, `'superhero'`, `'united'`, `'yeti'`.
+
 
 Register assets in views with:
 
-```
+```php
 p2made\assets\AssetNameAsset::register($this);
 ```
 
@@ -99,7 +117,10 @@ p2made\assets\FullCalendarAsset::register($this);
 p2made\assets\GMapsAsset::register($this);
 p2made\assets\HolderAsset::register($this);
 p2made\assets\IsotopeAsset::register($this);
+p2made\assets\JqueryAsset::register($this);
 p2made\assets\JqueryCountToAsset::register($this);
+p2made\assets\JqueryMigrateAsset::register($this);
+p2made\assets\JuiAsset::register($this);
 p2made\assets\MasonryAsset::register($this);
 p2made\assets\MetisMenuAsset::register($this);
 p2made\assets\MomentAsset::register($this);
@@ -130,7 +151,10 @@ p2made\assets\Html5shivAsset::register($this);
 		'p2made\assets\GMapsAsset',
 		'p2made\assets\HolderAsset',
 		'p2made\assets\IsotopeAsset',
+		'p2made\assets\JqueryAsset',
 		'p2made\assets\JqueryCountToAsset',
+		'p2made\assets\JqueryMigrateAsset',
+		'p2made\assets\JuiAsset',
 		'p2made\assets\MasonryAsset',
 		'p2made\assets\MetisMenuAsset',
 		'p2made\assets\MomentAsset',
