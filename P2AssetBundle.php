@@ -43,7 +43,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			'pubJs' => [
 				'js/bootstrap.min.js',
 			],
-			'cdnCss' => [
+			'cdnJs' => [
 				'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js',
 			],
 		),
