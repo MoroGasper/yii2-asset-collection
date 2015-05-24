@@ -34,9 +34,9 @@ class BootstrapAsset extends P2AssetBundle
 	'p2assets' => [
 		'useCdn' => true, // false or not set to use published assets
 		'bwTheme' = 'cerulean', // set to one of:
-							'cerulean', 'cosmo', 'cyborg', 'darkly',
-							'flatly', 'journal', 'lumen', 'paper',
-							'readable', 'sandstone', 'simplex', 'slate',
-							'spacelab', 'superhero', 'united', 'yeti',
+									'cerulean', 'cosmo', 'cyborg', 'darkly',
+									'flatly', 'journal', 'lumen', 'paper',
+									'readable', 'sandstone', 'simplex', 'slate',
+									'spacelab', 'superhero', 'united', 'yeti',
 	],
 */
