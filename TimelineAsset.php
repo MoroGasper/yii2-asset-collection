@@ -19,7 +19,6 @@ class TimelineAsset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-		'yii\web\YiiAsset',
 		'yii\bootstrap\BootstrapPluginAsset',
 	];
 }

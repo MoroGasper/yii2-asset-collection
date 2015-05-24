@@ -29,9 +29,5 @@ class ExcanvasAsset extends P2AssetBundle
 		'condition' => 'lte IE9'
 	];
 
-	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap\BootstrapAsset',
-		'yii\web\JqueryAsset',
-	];
+	public $depends = [];
 }

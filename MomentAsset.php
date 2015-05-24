@@ -24,4 +24,6 @@ class MomentAsset extends P2AssetBundle
 
 		parent::init();
 	}
+
+	public $depends = [];
 }

@@ -24,4 +24,6 @@ class MomentTimezoneAsset extends P2AssetBundle
 
 		parent::init();
 	}
+
+	public $depends = [];
 }

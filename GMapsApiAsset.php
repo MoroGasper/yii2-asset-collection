@@ -18,9 +18,5 @@ class GMapsApiAsset extends \yii\web\AssetBundle
 		'http://maps.google.com/maps/api/js?sensor=true',
 	];
 
-	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap\BootstrapAsset',
-		'yii\web\JqueryAsset',
-	];
+	public $depends = [];
 }

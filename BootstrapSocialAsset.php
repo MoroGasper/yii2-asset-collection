@@ -26,9 +26,6 @@ class BootstrapSocialAsset extends P2AssetBundle
 	}
 
 	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap\BootstrapAsset',
-		'yii\web\JqueryAsset',
 		'p2made\assets\FontAwesomeAsset',
 	];
 }
