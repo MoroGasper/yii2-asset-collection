@@ -19,6 +19,6 @@ class TimelineAsset extends \yii\web\AssetBundle
 	];
 
 	public $depends = [
-		'yii\bootstrap\BootstrapPluginAsset',
+		'p2made\assets\BootstrapPluginAsset',
 	];
 }
