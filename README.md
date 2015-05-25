@@ -1,4 +1,4 @@
-P2AssetCollection v3.1.0
+P2AssetCollection v3.2.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -10,6 +10,7 @@ Resource | Asset Class
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
 [dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
 [excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
+[flag-icon-css](https://github.com/lipis/flag-icon-css) | `p2made\assets\FlagIconCssAsset`
 [FitVids.js](http://fitvidsjs.com) | `p2made\assets\FitvidsAsset`
 [Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
 Flot tooltip | `p2made\assets\FlotTooltipAsset` |
@@ -110,6 +111,7 @@ p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\BootstrapSocialAsset::register($this);
 p2made\assets\DataTablesAsset::register($this);
 p2made\assets\ExcanvasAsset::register($this);
+p2made\assets\FlagIconCssAsset::register($this);
 p2made\assets\FitvidsAsset::register($this);
 p2made\assets\FlotChartsAsset::register($this);
 p2made\assets\FontAwesomeAsset::register($this);
@@ -144,6 +146,7 @@ p2made\assets\PrintShivAsset::register($this);
 		'p2made\assets\BootstrapSocialAsset',
 		'p2made\assets\DataTablesAsset',
 		'p2made\assets\ExcanvasAsset',
+		'p2made\assets\FlagIconCssAsset',
 		'p2made\assets\FitvidsAsset',
 		'p2made\assets\FlotChartsAsset',
 		'p2made\assets\FontAwesomeAsset',
