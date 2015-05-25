@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class MomentTimezoneAsset extends P2AssetBundle
 {
-	private $bundleName = 'moment-timezone';
+	private $resourceData = array(
+		'sourcePath' => '@bower/moment-timezone',
+		'pub-js'  => [
+			'moment-timezone.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.3.1/moment-timezone.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

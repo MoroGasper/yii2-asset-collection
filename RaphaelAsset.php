@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class RaphaelAsset extends P2AssetBundle
 {
-	private $bundleName = 'raphael';
+	private $resourceData = array(
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/raphael-2.1.2',
+		'pub-js'  => [
+			'raphael-min.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

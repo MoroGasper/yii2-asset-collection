@@ -12,20 +12,30 @@ namespace p2made\assets;
 
 class BootstrapAsset extends P2AssetBundle
 {
-	private $bundleName = 'bootstrap';
+	private $resourceData = array(
+		'sourcePath' => '@bower/bootstrap/dist',
+		'pub-css' => [
+			'css/bootstrap.min.css',
+		],
+		'cdn-css' => [
+			'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
 		if(isset(\Yii::$app->params['p2assets']['bwTheme'])) {
-			$this->bundleName = 'bootswatch-' . \Yii::$app->params['p2assets']['bwTheme'];
+			$themeName = \Yii::$app->params['p2assets']['bwTheme'];
+			$this->resourceData['sourcePath'] = '@bower/bootswatch/' . $themeName;
+			$this->resourceData['pub-css'] = [
+				'bootstrap.min.css',
+			];
+			$this->resourceData['cdn-css'] = [
+				'//maxcdn.bootstrapcdn.com/bootswatch/3.3.4/' . $themeName . '/bootstrap.min.css',
+			];
 		}
 
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->cssItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

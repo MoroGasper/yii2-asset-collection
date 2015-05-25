@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class HolderAsset extends P2AssetBundle
 {
-	private $bundleName = 'holder';
+	private $resourceData = array(
+		'sourcePath' => '@vendor/imsky/holder',
+		'pub-js'  => [
+			'holder.min.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/holder/2.7.1/holder.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

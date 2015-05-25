@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class MomentAsset extends P2AssetBundle
 {
-	private $bundleName = 'moment';
+	private $resourceData = array(
+		'sourcePath' => '@bower/moment/min',
+		'pub-js'  => [
+			'moment.min.js'
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

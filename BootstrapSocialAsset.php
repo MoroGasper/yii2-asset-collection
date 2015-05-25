@@ -12,20 +12,23 @@ namespace p2made\assets;
 
 class BootstrapSocialAsset extends P2AssetBundle
 {
-	private $bundleName = 'bootstrap-social';
-
-	/**
-	 * @inherit doc
-	 */
-	public function init()
-	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->cssItem($this->bundleName);
-
-		parent::init();
-	}
+	private $resourceData = array(
+		'sourcePath' => '@bower/bootstrap-social',
+		'pub-css' => [
+			'bootstrap-social.css',
+		],
+		'cdn-css' => [
+			'//cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.0/bootstrap-social.min.css',
+		],
+	);
 
 	public $depends = [
 		'p2made\assets\FontAwesomeAsset',
 	];
+
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

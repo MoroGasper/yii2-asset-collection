@@ -12,21 +12,31 @@ namespace p2made\assets;
 
 class FullCalendarAsset extends P2AssetBundle
 {
-	private $bundleName = 'fullCalendar';
-
-	/**
-	 * @inherit doc
-	 */
-	public function init()
-	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->cssItem($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
-		parent::init();
-	}
+	private $resourceData = array(
+		'sourcePath' => '@bower/fullcalendar/dist',
+		'pub-css' => [
+			'fullcalendar.min.css',
+			'fullcalendar.print.css',
+		],
+		'cdn-css' => [
+			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css',
+			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.print.css',
+		],
+		'pub-js'  => [
+			'fullcalendar.min.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js',
+		],
+	);
 
 	public $depends = [
 		'p2made\assets\MomentAsset',
 	];
+
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

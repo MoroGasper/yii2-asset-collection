@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class FitvidsAsset extends P2AssetBundle
 {
-	private $bundleName = 'fitvids';
+	private $resourceData = array(
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/FitVids.js',
+		'pub-js'  => [
+			'jquery.fitvids.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

@@ -12,20 +12,23 @@ namespace p2made\assets;
 
 class GMapsAsset extends P2AssetBundle
 {
-	private $bundleName = 'gmaps';
-
-	/**
-	 * @inherit doc
-	 */
-	public function init()
-	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
-		parent::init();
-	}
+	private $resourceData = array(
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/gmaps',
+		'pub-js'  => [
+			'gmaps.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js',
+		],
+	);
 
 	public $depends = [
 		'p2made\assets\GMapsApiAsset',
 	];
+
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class IsotopeAsset extends P2AssetBundle
 {
-	private $bundleName = 'isotope';
+	private $resourceData = array(
+		'sourcePath' => '@bower/isotope/dist',
+		'pub-js'  => [
+			'isotope.pkgd.min.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

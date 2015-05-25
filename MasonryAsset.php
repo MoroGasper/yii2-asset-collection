@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class MasonryAsset extends P2AssetBundle
 {
-	private $bundleName = 'masonry';
+	private $resourceData = array(
+		'sourcePath' => '@bower/masonry/dist',
+		'pub-js'  => [
+			'masonry.pkgd.min.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

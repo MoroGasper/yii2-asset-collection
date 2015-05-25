@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class FontAwesomeAsset extends P2AssetBundle
 {
-	private $bundleName = 'font-awesome';
+	private $resourceData = array(
+		'sourcePath' => '@vendor/fortawesome/font-awesome',
+		'pub-css'  => [
+			'css/font-awesome.min.css',
+		],
+		'cdn-css'  => [
+			'//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->cssItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

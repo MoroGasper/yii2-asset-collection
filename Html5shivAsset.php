@@ -12,21 +12,26 @@ namespace p2made\assets;
 
 class Html5shivAsset extends P2AssetBundle
 {
-	private $bundleName = 'html5shiv';
-
-	/**
-	 * @inherit doc
-	 */
-	public function init()
-	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
-		parent::init();
-	}
+	private $resourceData = array(
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/shiv',
+		'pub-js'  => [
+			'html5shiv-3.7.2/dist/html5shiv.min.js',
+			'Respond-1.4.2/dest/respond.min.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js',
+			'//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js',
+		],
+	);
 
 	public $jsOptions = [
 		'condition' => 'lte IE9',
 		'position' => \yii\web\View::POS_HEAD,
 	];
+
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

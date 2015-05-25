@@ -12,20 +12,23 @@ namespace p2made\assets;
 
 class JuiAsset extends P2AssetBundle
 {
-	private $bundleName = 'jquery-ui';
-
-	/**
-	 * @inherit doc
-	 */
-	public function init()
-	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
-		parent::init();
-	}
+	private $resourceData = array(
+		'sourcePath' => '@bower/jquery-ui',
+		'pub-js' => [
+			'jquery-ui.min.js',
+		],
+		'cdn-js' => [
+			'//code.jquery.com/ui/1.11.4/jquery-ui.min.js',
+		],
+	);
 
 	public $depends = [
 		'p2made\assets\JqueryAsset',
 	];
+
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

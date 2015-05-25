@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class JqueryAsset extends P2AssetBundle
 {
-	private $bundleName = 'jquery';
+	private $resourceData = array(
+		'sourcePath' => '@bower/jquery/dist',
+		'pub-js' => [
+			'jquery.min.js',
+		],
+		'cdn-js' => [
+			'//code.jquery.com/jquery-1.11.3.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

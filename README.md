@@ -1,5 +1,5 @@
-P2AssetCollection v2.16.4
-=========================
+P2AssetCollection v3.0.0
+========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
 
@@ -28,7 +28,6 @@ Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [MomentTimezone](http://momentjs.com/timezone/) | `p2made\assets\MomentTimezoneAsset`
 [Morris.JS](http://morrisjs.github.io/morris.js/) | `p2made\assets\MorrisAsset`
 [prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/) | `p2made\assets\PrettyPhotoAsset`
-[prettySociable](http://www.no-margin-for-errors.com/projects/prettysociable-mashable-like-sharing/) | `p2made\assets\PrettySociableAsset`
 [Raphaël](http://raphaeljs.com) | `p2made\assets\RaphaelAsset`
 [SweetAlert](http://t4t5.github.io/sweetalert/) | `p2made\assets\SweetAlertAsset`
 timeline | `p2made\assets\TimelineAsset`
@@ -128,7 +127,6 @@ p2made\assets\MomentAsset::register($this);
 p2made\assets\MomentTimezoneAsset::register($this);
 p2made\assets\MorrisAsset::register($this);
 p2made\assets\PrettyPhotoAsset::register($this);
-p2made\assets\PrettySociableAsset::register($this);
 p2made\assets\RaphaelAsset::register($this);
 p2made\assets\SweetAlertAsset::register($this);
 p2made\assets\TimelineAsset::register($this);
@@ -163,7 +161,6 @@ p2made\assets\PrintShivAsset::register($this);
 		'p2made\assets\MomentTimezoneAsset',
 		'p2made\assets\MorrisAsset',
 		'p2made\assets\PrettyPhotoAsset',
-		'p2made\assets\PrettySociableAsset',
 		'p2made\assets\RaphaelAsset',
 		'p2made\assets\SweetAlertAsset',
 		'p2made\assets\TimelineAsset',

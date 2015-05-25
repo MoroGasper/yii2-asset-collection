@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class ExcanvasAsset extends P2AssetBundle
 {
-	private $bundleName = 'excanvas';
+	private $resourceData = array(
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/flot-0.8.3',
+		'pub-js'  => [
+			'excanvas.min.js',
+		],
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 

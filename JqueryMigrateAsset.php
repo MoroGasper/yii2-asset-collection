@@ -12,20 +12,23 @@ namespace p2made\assets;
 
 class JqueryMigrateAsset extends P2AssetBundle
 {
-	private $bundleName = 'jquery-migrate';
-
-	/**
-	 * @inherit doc
-	 */
-	public function init()
-	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
-		parent::init();
-	}
+	private $resourceData = array(
+		'sourcePath' => '@bower/jquery-migrate',
+		'pub-js' => [
+			'jquery-migrate.min.js',
+		],
+		'cdn-js' => [
+			'//code.jquery.com/jquery-migrate-1.2.1.min.js',
+		],
+	);
 
 	public $depends = [
 		'p2made\assets\JqueryAsset',
 	];
+
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

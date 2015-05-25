@@ -12,16 +12,19 @@ namespace p2made\assets;
 
 class AnimateAsset extends P2AssetBundle
 {
-	private $bundleName = 'animate';
+	private $resourceData = array(
+		'sourcePath' => '@bower/animate.css',
+		'pub-css' => [
+			'animate.min.css',
+		],
+		'cdn-css' => [
+			'//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->cssItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }

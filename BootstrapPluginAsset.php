@@ -12,16 +12,23 @@ namespace p2made\assets;
 
 class BootstrapPluginAsset extends P2AssetBundle
 {
-	private $bundleName = 'bootstrap-plugin';
+	private $resourceData = array(
+		'sourcePath' => '@bower/bootstrap/dist',
+		'pub-js' => [
+			'js/bootstrap.min.js',
+		],
+		'cdn-js' => [
+			'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js',
+		],
+	);
 
-	/**
-	 * @inherit doc
-	 */
+	public $depends = [
+		'p2made\assets\JqueryAsset',
+	];
+
 	public function init()
 	{
-		$this->sourcePath = $this->assetSourcePath($this->bundleName);
-		$this->css = $this->jsItem($this->bundleName);
-
+		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
 }
