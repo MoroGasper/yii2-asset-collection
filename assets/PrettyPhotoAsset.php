@@ -13,7 +13,7 @@ namespace p2made\assets;
 class PrettyPhotoAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/prettyPhoto_3.1.6',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/prettyPhoto_3.1.6',
 		'pub-css' => [
 			'css/prettyPhoto.min.css',
 		],

@@ -1,6 +1,6 @@
 <?php
 /**
- * JqueryCountToAsset.php
+ * WowAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,20 +10,20 @@
 
 namespace p2made\assets;
 
-class JqueryCountToAsset extends P2AssetBundle
+class WowAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/jquery-countTo',
-		'pub-js' => [
-			'jquery.countTo.js',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/WOW/dist',
+		'pub-js'  => [
+			'wow.min.js',
 		],
-		'cdn-js' => [
-			'//cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
+		'cdn-js'  => [
+			'//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
 		],
 	);
 
 	public $depends = [
-		'p2made\assets\JqueryAsset',
+		'p2made\assets\AnimateAsset',
 	];
 
 	public function init()

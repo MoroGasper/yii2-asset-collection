@@ -13,7 +13,7 @@ namespace p2made\assets;
 class FlotChartsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/flot-0.8.3',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/flot-0.8.3',
 		'pub-js'  => [
 			'jquery.flot.js',
 			'jquery.flot.pie.js',

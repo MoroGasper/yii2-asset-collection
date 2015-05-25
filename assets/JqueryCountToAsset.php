@@ -1,6 +1,6 @@
 <?php
 /**
- * GMapsAsset.php
+ * JqueryCountToAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,20 +10,20 @@
 
 namespace p2made\assets;
 
-class GMapsAsset extends P2AssetBundle
+class JqueryCountToAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/gmaps',
-		'pub-js'  => [
-			'gmaps.js',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/jquery-countTo',
+		'pub-js' => [
+			'jquery.countTo.js',
 		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js',
+		'cdn-js' => [
+			'//cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
 		],
 	);
 
 	public $depends = [
-		'p2made\assets\GMapsApiAsset',
+		'p2made\assets\JqueryAsset',
 	];
 
 	public function init()

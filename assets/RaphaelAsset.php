@@ -1,6 +1,6 @@
 <?php
 /**
- * ExcanvasAsset.php
+ * RaphaelAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,15 +10,15 @@
 
 namespace p2made\assets;
 
-class ExcanvasAsset extends P2AssetBundle
+class RaphaelAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/flot-0.8.3',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/raphael-2.1.2',
 		'pub-js'  => [
-			'excanvas.min.js',
+			'raphael-min.js',
 		],
 		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
+			'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
 		],
 	);
 
@@ -27,8 +27,4 @@ class ExcanvasAsset extends P2AssetBundle
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
-
-	public $jsOptions = [
-		'condition' => 'lte IE9'
-	];
 }

@@ -1,6 +1,6 @@
 <?php
 /**
- * WowAsset.php
+ * ExcanvasAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,25 +10,25 @@
 
 namespace p2made\assets;
 
-class WowAsset extends P2AssetBundle
+class ExcanvasAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/WOW/dist',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/flot-0.8.3',
 		'pub-js'  => [
-			'wow.min.js',
+			'excanvas.min.js',
 		],
 		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
+			'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/excanvas.min.js',
 		],
 	);
-
-	public $depends = [
-		'p2made\assets\AnimateAsset',
-	];
 
 	public function init()
 	{
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
+
+	public $jsOptions = [
+		'condition' => 'lte IE9'
+	];
 }

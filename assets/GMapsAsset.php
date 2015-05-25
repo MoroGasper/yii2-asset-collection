@@ -1,6 +1,6 @@
 <?php
 /**
- * RaphaelAsset.php
+ * GMapsAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,17 +10,21 @@
 
 namespace p2made\assets;
 
-class RaphaelAsset extends P2AssetBundle
+class GMapsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/raphael-2.1.2',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/gmaps',
 		'pub-js'  => [
-			'raphael-min.js',
+			'gmaps.js',
 		],
 		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
+			'//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js',
 		],
 	);
+
+	public $depends = [
+		'p2made\assets\GMapsApiAsset',
+	];
 
 	public function init()
 	{
