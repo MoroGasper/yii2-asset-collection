@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "3.2.0",
+    "version": "3.3.0",
     "minimum-stability": "dev",
 
     "require": {
@@ -33,6 +33,7 @@
         "bower-asset/animate.css" : "*",
         "bower-asset/bootstrap" : "*",
         "bower-asset/bootstrap-social" : "*",
+        "bower-asset/bootstrap-switch" : "*",
         "bower-asset/bootswatch" : "*",
         "bower-asset/fullcalendar" : "*",
         "bower-asset/isotope" : "*",
