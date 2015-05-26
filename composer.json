@@ -24,7 +24,7 @@
         }
     ],
 
-    "version": "3.3.0",
+    "version": "3.4.0",
     "minimum-stability": "dev",
 
     "require": {
@@ -44,6 +44,7 @@
         "bower-asset/moment" : "*",
         "bower-asset/moment-timezone" : "*",
         "bower-asset/qunit" : "*",
+        "bower-asset/respond" : "*",
         "bower-asset/sweetalert" : "*",
         "components/flag-icon-css": "*",
         "fortawesome/font-awesome": "*",

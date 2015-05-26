@@ -1,6 +1,6 @@
 <?php
 /**
- * BootstrapSwitchAsset.php
+ * jQueryPrettyCheckableAsset.php
  *
  * @copyright Copyright &copy; Pedro Plowman, https://github.com/p2made, 2015
  * @author Pedro Plowman
@@ -10,7 +10,7 @@
 
 namespace p2made\assets;
 
-class BootstrapSwitchAsset extends P2AssetBundle
+class jQueryPrettyCheckableAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'sourcePath' => '@vendor/bower/bootstrap-switch/dist',
@@ -29,7 +29,6 @@ class BootstrapSwitchAsset extends P2AssetBundle
 	);
 
 	public $depends = [
-		'p2made\assets\JqueryAsset',
 		'p2made\assets\BootstrapAsset',
 	];
 
@@ -39,3 +38,7 @@ class BootstrapSwitchAsset extends P2AssetBundle
 		parent::init();
 	}
 }
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.prettycheckable/1.2/prettyCheckable.css">
+<script src="//cdn.jsdelivr.net/jquery.prettycheckable/1.2/prettyCheckable.js"></script>
