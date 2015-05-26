@@ -29,7 +29,6 @@ class BootstrapSwitchAsset extends P2AssetBundle
 	);
 
 	public $depends = [
-		'p2made\assets\JqueryAsset',
 		'p2made\assets\BootstrapAsset',
 	];
 
