@@ -51,8 +51,9 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 	protected static function useCdn()
 	{
-		if(isset(\Yii::$app->params['p2assets']['useCdn'])) {
-			$_useCdn = \Yii::$app->params['p2assets']['useCdn'];
+		// using 'p2made' as param space to allow for my other bits
+		if(isset(\Yii::$app->params['p2made']['useCdn'])) {
+			$_useCdn = \Yii::$app->params['p2made']['useCdn'];
 		}
 		return $_useCdn;
 	}
