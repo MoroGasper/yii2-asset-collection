@@ -64,12 +64,12 @@ class FullCalendarAsset extends P2AssetBundle
 		$language = $this->language ? $this->language : \Yii::$app->language;
 		$cdnJs = '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/';
 		if ($language != 'en-us'){
-			$jsTemp = ($this->useCdn ? $cdnJs : '') . "lang/{$language}.js";
+			$jsTemp = (P2AssetBundle::useCdn() ? $cdnJs : '') . "lang/{$language}.js";
 			$this->js[] = $jsTemp;
 		}
 
 		if($this->googleCalendar){
-			$jsTemp = ($this->useCdn ? $cdnJs : '') . 'gcal.js';
+			$jsTemp = (P2AssetBundle::useCdn() ? $cdnJs : '') . 'gcal.js';
 			$this->js[] = $jsTemp;
 		}
 

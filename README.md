@@ -1,4 +1,4 @@
-P2AssetCollection v3.4.2
+P2AssetCollection v3.4.3
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
