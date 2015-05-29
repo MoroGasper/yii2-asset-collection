@@ -61,7 +61,7 @@ class FullCalendarAsset extends P2AssetBundle
 	 */
 	public function registerAssetFiles($view)
 	{
-		$language = $this->language ? $this->language : Yii::$app->language;
+		$language = $this->language ? $this->language : \Yii::$app->language;
 		$cdnJs = '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/';
 		if ($language != 'en-us'){
 			$jsTemp = ($this->useCdn ? $cdnJs : '') . "lang/{$language}.js";
