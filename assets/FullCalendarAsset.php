@@ -51,8 +51,8 @@ class FullCalendarAsset extends P2AssetBundle
 	 * @var array
 	 */
 	public $depends = [
-		'p2made\calendar\assets\MomentAsset',
-		'p2made\calendar\assets\FullCalendarPrintAsset',
+		'p2made\assets\MomentAsset',
+		'p2made\assets\FullCalendarPrintAsset',
 		'p2made\assets\JuiAsset',
 	];
 
