@@ -12,11 +12,31 @@ namespace p2made\assets;
 
 class P2AssetBundle extends \yii\web\AssetBundle
 {
+	/**
+	 * [$sourcePath description]
+	 * @var string
+	 */
 	public $sourcePath = null;
+
+	/**
+	 * [$css description]
+	 * @var array
+	 */
 	public $css = [];
+
+	/**
+	 * [$js description]
+	 * @var array
+	 */
 	public $js  = [];
+
+	/**
+	 * [$depends description]
+	 * @var array
+	 */
 	public $depends = [];
-	public $_useCdn = false;
+
+	protected $_useCdn = false;
 
 	protected function configureAsset($resourceData)
 	{

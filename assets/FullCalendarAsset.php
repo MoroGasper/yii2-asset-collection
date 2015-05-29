@@ -12,15 +12,31 @@ namespace p2made\assets;
 
 class FullCalendarAsset extends P2AssetBundle
 {
+	/**
+	 * the language the calender will be displayed in
+	 * @var string ISO2 code for the wished display language
+	 */
+	public $language = null;
+
+	/**
+	 * [$autoGenerate description]
+	 * @var boolean
+	 */
+	public $autoGenerate = true;
+
+	/**
+	 * tell the calendar, if you like to render google calendar events within the view
+	 * @var boolean
+	 */
+	public $googleCalendar = false;
+
 	private $resourceData = array(
 		'sourcePath' => '@bower/fullcalendar/dist',
 		'pub-css' => [
 			'fullcalendar.min.css',
-			'fullcalendar.print.css',
 		],
 		'cdn-css' => [
 			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css',
-			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.print.css',
 		],
 		'pub-js'  => [
 			'fullcalendar.min.js',
@@ -30,9 +46,36 @@ class FullCalendarAsset extends P2AssetBundle
 		],
 	);
 
+	/**
+	 * [$depends description]
+	 * @var array
+	 */
 	public $depends = [
-		'p2made\assets\MomentAsset',
+		'p2made\calendar\assets\MomentAsset',
+		'p2made\calendar\assets\FullCalendarPrintAsset',
+		'p2made\assets\JuiAsset',
 	];
+
+	/**
+	 * @inheritdoc
+	 */
+	public function registerAssetFiles($view)
+	{
+		$language = $this->language ? $this->language : Yii::$app->language;
+		$cdnJs = '//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/';
+		if ($language != 'en-us'){
+			$jsTemp = ($this->useCdn ? $cdnJs : '') . "lang/{$language}.js";
+			$this->js[] = $jsTemp;
+		}
+
+		if($this->googleCalendar){
+			$jsTemp = ($this->useCdn ? $cdnJs : '') . 'gcal.js';
+			$this->js[] = $jsTemp;
+		}
+
+		parent::registerAssetFiles($view);
+	}
+
 
 	public function init()
 	{
