@@ -13,7 +13,7 @@ namespace p2made\assets;
 class DataTablesAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/DataTables-1.10.7',
+		'sourcePath' => $this->ownPathBase() . 'DataTables-1.10.7',
 		'pub-css' => [
 			'plugins/integration/bootstrap/3/dataTables.bootstrap.css',
 			'extensions/Responsive/css/dataTables.responsive.css',

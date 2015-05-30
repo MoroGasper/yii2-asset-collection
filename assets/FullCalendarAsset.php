@@ -31,7 +31,7 @@ class FullCalendarAsset extends P2AssetBundle
 	public $googleCalendar = false;
 
 	private $resourceData = array(
-		'sourcePath' => '@bower/fullcalendar/dist',
+		'sourcePath' => $this->ownPathBase() . 'fullcalendar-2.3.1',
 		'pub-css' => [
 			'fullcalendar.min.css',
 		],

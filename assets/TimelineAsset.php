@@ -12,7 +12,7 @@ namespace p2made\assets;
 
 class TimelineAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/assets/timeline';
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/lib/timeline';
 
 	public $css = [
 		'timeline.css',

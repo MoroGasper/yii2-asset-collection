@@ -13,7 +13,7 @@ namespace p2made\assets;
 class SweetAlertAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@bower/sweetalert/lib',
+		'sourcePath' => $this->ownPathBase() . 'sweetalert-1.0.0/dist',
 		'pub-css' => [
 			'sweetalert.css',
 		],

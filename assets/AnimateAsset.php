@@ -13,7 +13,7 @@ namespace p2made\assets;
 class AnimateAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@bower/animate.css',
+		'sourcePath' => $this->ownPathBase() . 'animate.css-3.3.0',
 		'pub-css' => [
 			'animate.min.css',
 		],

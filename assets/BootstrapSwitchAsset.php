@@ -13,7 +13,7 @@ namespace p2made\assets;
 class BootstrapSwitchAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/bower/bootstrap-switch/dist',
+		'sourcePath' => $this->ownPathBase() . 'bootstrap-switch-3.3.2/dist',
 		'pub-css' => [
 			'css/bootstrap3/bootstrap-switch.min.css',
 		],

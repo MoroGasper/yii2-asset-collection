@@ -13,7 +13,7 @@ namespace p2made\assets;
 class BootstrapSocialAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@bower/bootstrap-social',
+		'sourcePath' => $this->ownPathBase() . 'bootstrap-social-4.9.0',
 		'pub-css' => [
 			'bootstrap-social.css',
 		],

@@ -13,7 +13,7 @@ namespace p2made\assets;
 class MorrisAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/morris.js-0.5.1',
+		'sourcePath' => $this->ownPathBase() . 'morris.js-0.5.1',
 		'pub-css' => [
 			'morris.css',
 		],

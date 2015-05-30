@@ -12,7 +12,7 @@ namespace p2made\assets;
 
 class FlotTooltipAsset extends \yii\web\AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/assets/flot.tooltip';
+	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/lib/flot.tooltip';
 
 	public $js = [
 		'js/jquery.flot.tooltip.min.js',

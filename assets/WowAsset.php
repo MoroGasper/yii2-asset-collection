@@ -13,7 +13,7 @@ namespace p2made\assets;
 class WowAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/assets/WOW/dist',
+		'sourcePath' => $this->ownPathBase() . 'WOW/dist',
 		'pub-js'  => [
 			'wow.min.js',
 		],
