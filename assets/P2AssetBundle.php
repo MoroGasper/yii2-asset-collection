@@ -37,6 +37,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	public $depends = [];
 
 	protected $_useCdn = false;
+	private $_ownPathBase = '@vendor/p2made/yii2-asset-collection/assets/lib/';
 
 	protected function configureAsset($resourceData)
 	{
@@ -76,6 +77,11 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			$_useCdn = \Yii::$app->params['p2made']['useCdn'];
 		}
 		return $_useCdn;
+	}
+
+	protected function ownPathBase()
+	{
+		return $this->_ownPathBase;
 	}
 
 /* --- asset template --- */

@@ -13,9 +13,10 @@ namespace p2made\assets;
 class JqueryAsset extends P2AssetBundle
 {
 	private $resourceData = array(
+		'sourcePath' => $this->ownPathBase() . 'jquery',
 		'sourcePath' => '@bower/jquery/dist',
 		'pub-js' => [
-			'jquery.min.js',
+			'jquery-1.11.3.min.js',
 		],
 		'cdn-js' => [
 			'//code.jquery.com/jquery-1.11.3.min.js',

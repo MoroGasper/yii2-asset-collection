@@ -13,7 +13,7 @@ namespace p2made\assets;
 class MasonryAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@bower/masonry/dist',
+		'sourcePath' => $this->ownPathBase() . 'masonry-3.3.0/dist',
 		'pub-js'  => [
 			'masonry.pkgd.min.js',
 		],
