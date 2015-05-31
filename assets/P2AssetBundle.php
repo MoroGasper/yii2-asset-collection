@@ -19,6 +19,18 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	public $sourcePath = null;
 
 	/**
+	 * [$basePath description]
+	 * @var string
+	 */
+	public $basePath = null;
+
+	/**
+	 * [$baseUrl description]
+	 * @var string
+	 */
+	public $baseUrl = null;
+
+	/**
 	 * [$css description]
 	 * @var array
 	 */
@@ -36,16 +48,8 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	 */
 	public $depends = [];
 
-	protected $_useCdn = false;
-	private $_ownPathBase = '@vendor/p2made/yii2-asset-collection/assets/lib/';
-
-	protected static function ownPath($folder)
-	{
-		if(!$folder) {
-			return false;
-		}
-		return $this->_ownPathBase . $folder;
-	}
+	private static $_cdnEnd;
+	private static $_useCdn;
 
 	protected function configureAsset($resourceData)
 	{
@@ -66,52 +70,106 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		}
 	}
 
-	protected function configurePubAsset($resourceData)
+	protected function configurePubAsset($resourceData, $fallOut = false)
 	{
-		//$this->sourcePath = $resourceData['sourcePath'];
-		$this->sourcePath = str_replace(
-			'#', '@vendor/p2made/yii2-asset-collection/assets/lib/',
-			$resourceData['sourcePath'], 1
-		);
-
-		if(isset($resourceData['pub-css'])) {
-			$this->css = $resourceData['pub-css'];
+		if(!isset($resourceData['pub'])) { // no published asset data
+			if($fallOut) {
+				return;
+			} else {
+				$this->configureCdnAsset($resourceData, true);
+			}
 		}
-		if(isset($resourceData['pub-js'])) {
-			$this->js = $resourceData['pub-js'];
+
+		$currentPath = $resourceData['sourcePath'];
+		if(P2AssetBundle::cdnEnd()) {
+			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd() . '/lib/', $currentPath);
+		} else {
+			$this->sourcePath = str_replace( '#/', P2AssetBundle::ownPath(), $currentPath);
+		}
+
+		if(isset($resourceData['pub']['css'])) {
+			$this->css = $resourceData['pub']['css'];
+		}
+		if(isset($resourceData['pub']['js'])) {
+			$this->js = $resourceData['pub']['js'];
 		}
 	}
 
-	protected function configureCdnAsset($resourceData)
+	protected function configureCdnAsset($resourceData, $fallOut = false)
 	{
-		if(isset($resourceData['cdn-css'])) {
-			$this->css = $resourceData['cdn-css'];
+		if(!isset($resourceData['cdn'])) { // no CDN asset data
+			if($fallOut) {
+				return;
+			} else {
+				$this->configurePubAsset($resourceData, true);
+			}
 		}
-		if(isset($resourceData['cdn-js'])) {
-			$this->js = $resourceData['cdn-js'];
+
+		if(isset($resourceData['cdn']['css'])) {
+			$this->css = $resourceData['cdn']['css'];
+		}
+		if(isset($resourceData['cdn']['js'])) {
+			$this->js = $resourceData['cdn']['js'];
 		}
 	}
 
 	protected static function useCdn()
 	{
+		if(isset($_useCdn)) { return $_useCdn; }
+
 		// using 'p2made' as param space to allow for my other bits
 		if(isset(\Yii::$app->params['p2made']['useCdn'])) {
 			$_useCdn = \Yii::$app->params['p2made']['useCdn'];
+		} else {
+			$_useCdn = false;
 		}
+
 		return $_useCdn;
+	}
+
+	protected static function ownPath($folder)
+	{
+		if(!$folder) { return false; }
+		return '@vendor/p2made/yii2-asset-collection/assets/lib/' . $folder;
+	}
+
+	protected static function cdnEnd()
+	{
+		if(isset($_cdnEnd)) { return $_cdnEnd; }
+
+		// using 'p2made' as param space to allow for my other bits
+		if(isset(\Yii::$app->params['p2made']['cdnEnd'])) {
+			$_cdnEnd = \Yii::$app->params['p2made']['cdnEnd'];
+		} else {
+			$_cdnEnd = false;
+		}
+
+		return $_cdnEnd;
 	}
 
 /* --- asset template --- */
 /*
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets',
-		'pub-css' => [],
-		'cdn-css' => [],
-		'pub-js'  => [],
-		'cdn-js'  => [],
+		'sourcePath' => '#/dummyFolder',
+		'pub' => [
+			'css' => [
+			],
+			'js' => [
+			],
+		],
+		'cdn' => [
+			'css' => [
+			],
+			'js' => [
+			],
+		],
+		'cssOptions' => [
+		],
+		'jsOptions' => [
+		],
+		'depends' => [
+		],
 	);
-
-	public $depends = [];
 
 	public function init()
 	{

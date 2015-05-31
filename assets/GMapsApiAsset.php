@@ -10,11 +10,19 @@
 
 namespace p2made\assets;
 
-class GMapsApiAsset extends \yii\web\AssetBundle
+class GMapsApiAsset extends P2AssetBundle
 {
-	public $sourcePath = null;
+	private $resourceData = array(
+		'cdn' => [
+			'js' => [
+				'http://maps.google.com/maps/api/js?sensor=true',
+			],
+		],
+	);
 
-	public $js = [
-		'http://maps.google.com/maps/api/js?sensor=true',
-	];
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

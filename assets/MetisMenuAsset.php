@@ -14,17 +14,21 @@ class MetisMenuAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'sourcePath' => '@vendor/onokumus/metismenu/dist',
-		'pub-css' => [
-			'metisMenu.min.css',
+		'pub' => [
+			'css' => [
+				'metisMenu.min.css',
+			],
+			'js' => [
+				'metisMenu.min.js',
+			],
 		],
-		'cdn-css' => [
-			'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.css',
-		],
-		'pub-js'  => [
-			'metisMenu.min.js',
-		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.js',
+		'cdn' => [
+			'css' => [
+				'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.css',
+			],
+			'js' => [
+				'//cdnjs.cloudflare.com/ajax/libs/metisMenu/2.0.0/metisMenu.min.js',
+			],
 		],
 	);
 

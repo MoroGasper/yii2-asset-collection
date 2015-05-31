@@ -31,18 +31,22 @@ class FullCalendarAsset extends P2AssetBundle
 	public $googleCalendar = false;
 
 	private $resourceData = array(
-		'sourcePath' => '#fullcalendar-2.3.1',
-		'pub-css' => [
-			'fullcalendar.min.css',
+		'sourcePath' => '#/fullcalendar-2.3.1',
+		'pub' => [
+			'css' => [
+				'fullcalendar.min.css',
+			],
+			'js' => [
+				'fullcalendar.min.js',
+			],
 		],
-		'cdn-css' => [
-			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css',
-		],
-		'pub-js'  => [
-			'fullcalendar.min.js',
-		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js',
+		'cdn' => [
+			'css' => [
+				'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css',
+			],
+			'js' => [
+				'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.js',
+			],
 		],
 		'depends' => [
 			'p2made\assets\MomentAsset',

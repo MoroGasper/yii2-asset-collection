@@ -13,12 +13,16 @@ namespace p2made\assets;
 class JqueryCountToAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#jquery-countTo',
-		'pub-js' => [
-			'jquery.countTo.js',
+		'sourcePath' => '#/jquery-countTo',
+		'pub' => [
+			'js' => [
+				'jquery.countTo.js',
+			],
 		],
-		'cdn-js' => [
-			'//cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
+		'cdn' => [
+			'js' => [
+				'//cdn.jsdelivr.net/jquery.countto/0.1.0/jquery.countTo.min.js',
+			],
 		],
 		'depends' => [
 			'p2made\assets\JqueryAsset',

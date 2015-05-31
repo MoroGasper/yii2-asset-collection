@@ -10,11 +10,20 @@
 
 namespace p2made\assets;
 
-class FlotTooltipAsset extends \yii\web\AssetBundle
+class FlotTooltipAsset extends P2AssetBundle
 {
-	public $sourcePath = '@vendor/p2made/yii2-asset-collection/assets/lib/flot.tooltip';
+	private $resourceData = array(
+		'sourcePath' => '#/dummyFolder',
+		'pub' => [
+			'js' => [
+				'js/jquery.flot.tooltip.min.js',
+			],
+		],
+	);
 
-	public $js = [
-		'js/jquery.flot.tooltip.min.js',
-	];
+	public function init()
+	{
+		$this->configureAsset($this->resourceData);
+		parent::init();
+	}
 }

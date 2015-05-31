@@ -13,12 +13,16 @@ namespace p2made\assets;
 class RaphaelAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#raphael-2.1.2',
-		'pub-js'  => [
-			'raphael-min.js',
+		'sourcePath' => '#/raphael-2.1.2',
+		'pub' => [
+			'js' => [
+				'raphael-min.js',
+			],
 		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
+		'cdn' => [
+			'js' => [
+				'//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js',
+			],
 		],
 	);
 

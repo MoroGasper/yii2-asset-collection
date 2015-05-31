@@ -13,12 +13,16 @@ namespace p2made\assets;
 class FullCalendarPrintAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#fullcalendar-2.3.1',
-		'pub-css' => [
-			'fullcalendar.print.css',
+		'sourcePath' => '#/fullcalendar-2.3.1',
+		'pub' => [
+			'css' => [
+				'fullcalendar.print.css',
+			],
 		],
-		'cdn-css' => [
-			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.print.css',
+		'cdn' => [
+			'css' => [
+				'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.print.css',
+			],
 		],
 		'cssOptions' => [
 			'media' => 'print'

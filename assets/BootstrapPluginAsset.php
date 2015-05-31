@@ -13,12 +13,16 @@ namespace p2made\assets;
 class BootstrapPluginAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#bootstrap-3.3.4/dist',
-		'pub-js' => [
-			'js/bootstrap.min.js',
+		'sourcePath' => '#/bootstrap-3.3.4/dist',
+		'pub' => [
+			'js' => [
+				'js/bootstrap.min.js',
+			],
 		],
-		'cdn-js' => [
-			'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js',
+		'cdn' => [
+			'js' => [
+				'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js',
+			],
 		],
 		'depends' => [
 			'p2made\assets\BootstrapAsset',

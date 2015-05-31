@@ -13,12 +13,16 @@ namespace p2made\assets;
 class GMapsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#gmaps',
-		'pub-js'  => [
-			'gmaps.js',
+		'sourcePath' => '#/gmaps',
+		'pub' => [
+			'js' => [
+				'gmaps.js',
+			],
 		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js',
+		'cdn' => [
+			'js' => [
+				'//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js',
+			],
 		],
 		'depends' => [
 			'p2made\assets\GMapsApiAsset',

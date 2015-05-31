@@ -14,11 +14,15 @@ class HolderAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'sourcePath' => '@vendor/imsky/holder',
-		'pub-js'  => [
-			'holder.min.js',
+		'pub' => [
+			'js' => [
+				'holder.min.js',
+			],
 		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/holder/2.7.1/holder.min.js',
+		'cdn' => [
+			'js' => [
+				'//cdnjs.cloudflare.com/ajax/libs/holder/2.7.1/holder.min.js',
+			],
 		],
 	);
 

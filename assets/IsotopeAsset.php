@@ -13,12 +13,16 @@ namespace p2made\assets;
 class IsotopeAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#isotope-2.2.0/dist',
-		'pub-js'  => [
-			'isotope.pkgd.min.js',
+		'sourcePath' => '#/isotope-2.2.0/dist',
+		'pub' => [
+			'js' => [
+				'isotope.pkgd.min.js',
+			],
 		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js',
+		'cdn' => [
+			'js' => [
+				'//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.0/isotope.pkgd.min.js',
+			],
 		],
 	);
 

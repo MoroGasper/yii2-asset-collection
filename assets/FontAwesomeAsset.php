@@ -14,11 +14,15 @@ class FontAwesomeAsset extends P2AssetBundle
 {
 	private $resourceData = array(
 		'sourcePath' => '@vendor/fortawesome/font-awesome',
-		'pub-css'  => [
-			'css/font-awesome.min.css',
+		'pub' => [
+			'css' => [
+				'css/font-awesome.min.css',
+			],
 		],
-		'cdn-css'  => [
-			'//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
+		'cdn' => [
+			'css' => [
+				'//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
+			],
 		],
 	);
 

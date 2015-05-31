@@ -13,18 +13,22 @@ namespace p2made\assets;
 class MorrisAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#qunit',
-		'pub-css' => [
-			'qunit-1.18.0.css',
+		'sourcePath' => '#/qunit',
+		'pub' => [
+			'css' => [
+				'qunit-1.18.0.css',
+			],
+			'js' => [
+				'qunit-1.18.0.js',
+			],
 		],
-		'cdn-css' => [
-			'//code.jquery.com/qunit/qunit-1.18.0.css',
-		],
-		'pub-js'  => [
-			'qunit-1.18.0.js',
-		],
-		'cdn-js'  => [
-			'//code.jquery.com/qunit/qunit-1.18.0.js',
+		'cdn' => [
+			'css' => [
+				'//code.jquery.com/qunit/qunit-1.18.0.css',
+			],
+			'js' => [
+				'//code.jquery.com/qunit/qunit-1.18.0.js',
+			],
 		],
 		'depends' => [
 			'p2made\assets\JqueryAsset',

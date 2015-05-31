@@ -13,18 +13,22 @@ namespace p2made\assets;
 class SweetAlertAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#sweetalert-1.0.0/dist',
-		'pub-css' => [
-			'sweetalert.css',
+		'sourcePath' => '#/sweetalert-1.0.0/dist',
+		'pub' => [
+			'css' => [
+				'sweetalert.css',
+			],
+			'js' => [
+				'sweetalert.min.js',
+			],
 		],
-		'cdn-css' => [
-			'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.css',
-		],
-		'pub-js'  => [
-			'sweetalert.min.js',
-		],
-		'cdn-js'  => [
-			'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.min.js',
+		'cdn' => [
+			'css' => [
+				'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.css',
+			],
+			'js' => [
+				'//cdnjs.cloudflare.com/ajax/libs/sweetalert/0.5.0/sweet-alert.min.js',
+			],
 		],
 	);
 
