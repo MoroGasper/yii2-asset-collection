@@ -13,7 +13,7 @@ namespace p2made\assets;
 class MorrisAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/qunit',
+		'sourcePath' => '#qunit',
 		'pub-css' => [
 			'qunit-1.18.0.css',
 		],

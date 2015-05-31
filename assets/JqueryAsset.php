@@ -13,7 +13,7 @@ namespace p2made\assets;
 class JqueryAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/jquery',
+		'sourcePath' => '#jquery',
 		'pub-js' => [
 			'jquery-1.11.3.min.js',
 		],

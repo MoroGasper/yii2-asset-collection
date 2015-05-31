@@ -13,7 +13,7 @@ namespace p2made\assets;
 class RaphaelAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/raphael-2.1.2',
+		'sourcePath' => '#raphael-2.1.2',
 		'pub-js'  => [
 			'raphael-min.js',
 		],

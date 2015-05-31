@@ -68,7 +68,11 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 	protected function configurePubAsset($resourceData)
 	{
-		$this->sourcePath = $resourceData['sourcePath'];
+		//$this->sourcePath = $resourceData['sourcePath'];
+		$this->sourcePath = str_replace(
+			'#', '@vendor/p2made/yii2-asset-collection/assets/lib/',
+			$resourceData['sourcePath'], 1
+		);
 
 		if(isset($resourceData['pub-css'])) {
 			$this->css = $resourceData['pub-css'];

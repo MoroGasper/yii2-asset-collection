@@ -13,7 +13,7 @@ namespace p2made\assets;
 class AnimateAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/animate.css-3.3.0',
+		'sourcePath' => '#animate.css-3.3.0',
 		'pub-css' => [
 			'animate.min.css',
 		],

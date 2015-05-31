@@ -13,7 +13,7 @@ namespace p2made\assets;
 class BootstrapAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/bootstrap-3.3.4/dist',
+		'sourcePath' => '#bootstrap-3.3.4/dist',
 		'pub-css' => [
 			'css/bootstrap.min.css',
 		],

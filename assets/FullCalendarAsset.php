@@ -31,7 +31,7 @@ class FullCalendarAsset extends P2AssetBundle
 	public $googleCalendar = false;
 
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/fullcalendar-2.3.1',
+		'sourcePath' => '#fullcalendar-2.3.1',
 		'pub-css' => [
 			'fullcalendar.min.css',
 		],

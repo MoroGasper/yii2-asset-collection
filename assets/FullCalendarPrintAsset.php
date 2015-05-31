@@ -13,7 +13,7 @@ namespace p2made\assets;
 class FullCalendarPrintAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/fullcalendar-2.3.1',
+		'sourcePath' => '#fullcalendar-2.3.1',
 		'pub-css' => [
 			'fullcalendar.print.css',
 		],

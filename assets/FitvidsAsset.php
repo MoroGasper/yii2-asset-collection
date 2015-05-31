@@ -13,7 +13,7 @@ namespace p2made\assets;
 class FitvidsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/FitVids.js',
+		'sourcePath' => '#FitVids.js',
 		'pub-js'  => [
 			'jquery.fitvids.js',
 		],

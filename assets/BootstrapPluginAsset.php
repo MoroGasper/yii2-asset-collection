@@ -13,7 +13,7 @@ namespace p2made\assets;
 class BootstrapPluginAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/bootstrap-3.3.4/dist',
+		'sourcePath' => '#bootstrap-3.3.4/dist',
 		'pub-js' => [
 			'js/bootstrap.min.js',
 		],

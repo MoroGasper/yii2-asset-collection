@@ -13,7 +13,7 @@ namespace p2made\assets;
 class MasonryAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/masonry-3.3.0/dist',
+		'sourcePath' => '#masonry-3.3.0/dist',
 		'pub-js'  => [
 			'masonry.pkgd.min.js',
 		],

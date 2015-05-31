@@ -13,7 +13,7 @@ namespace p2made\assets;
 class JqueryCountToAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/jquery-countTo',
+		'sourcePath' => '#jquery-countTo',
 		'pub-js' => [
 			'jquery.countTo.js',
 		],

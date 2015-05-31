@@ -13,7 +13,7 @@ namespace p2made\assets;
 class IsotopeAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/isotope-2.2.0/dist',
+		'sourcePath' => '#isotope-2.2.0/dist',
 		'pub-js'  => [
 			'isotope.pkgd.min.js',
 		],

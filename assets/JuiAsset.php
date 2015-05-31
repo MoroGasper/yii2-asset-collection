@@ -13,7 +13,7 @@ namespace p2made\assets;
 class JuiAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/jquery-ui-1.11.4',
+		'sourcePath' => '#jquery-ui-1.11.4',
 		'pub-js' => [
 			'jquery-ui.min.js',
 		],

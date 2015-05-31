@@ -13,7 +13,7 @@ namespace p2made\assets;
 class Html5shivAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/shiv',
+		'sourcePath' => '#shiv',
 		'pub-js'  => [
 			'html5shiv-3.7.2/dist/html5shiv.min.js',
 			'Respond-1.4.2/dest/respond.min.js',
