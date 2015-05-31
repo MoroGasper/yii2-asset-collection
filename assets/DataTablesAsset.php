@@ -13,7 +13,7 @@ namespace p2made\assets;
 class DataTablesAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'DataTables-1.10.7',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/DataTables-1.10.7',
 		'pub-css' => [
 			'plugins/integration/bootstrap/3/dataTables.bootstrap.css',
 			'extensions/Responsive/css/dataTables.responsive.css',
@@ -30,11 +30,10 @@ class DataTablesAsset extends P2AssetBundle
 			'//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js',
 			'//cdn.datatables.net/plug-ins/3cfcc339e89/integration/bootstrap/3/dataTables.bootstrap.js',
 		],
+		'depends' => [
+			'p2made\assets\JqueryAsset',
+		],
 	);
-
-	public $depends = [
-		'p2made\assets\JqueryAsset',
-	];
 
 	public function init()
 	{

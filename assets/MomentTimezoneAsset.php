@@ -13,7 +13,7 @@ namespace p2made\assets;
 class MomentTimezoneAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'moment-timezone-0.3.1',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/moment-timezone-0.3.1',
 		'pub-js'  => [
 			'moment-timezone.js',
 		],

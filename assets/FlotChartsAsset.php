@@ -13,7 +13,7 @@ namespace p2made\assets;
 class FlotChartsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'flot-0.8.3',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/flot-0.8.3',
 		'pub-js'  => [
 			'jquery.flot.js',
 			'jquery.flot.pie.js',
@@ -26,12 +26,11 @@ class FlotChartsAsset extends P2AssetBundle
 			'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.resize.min.js',
 			'//cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.time.min.js',
 		],
+		'depends' => [
+			'p2made\assets\ExcanvasAsset',
+			'p2made\assets\FlotTooltipAsset',
+		],
 	);
-
-	public $depends = [
-		'p2made\assets\ExcanvasAsset',
-		'p2made\assets\FlotTooltipAsset',
-	];
 
 	public function init()
 	{

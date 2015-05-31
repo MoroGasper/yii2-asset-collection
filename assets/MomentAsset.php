@@ -13,7 +13,7 @@ namespace p2made\assets;
 class MomentAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'moment-2.10.3',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/moment-2.10.3',
 		'pub-js'  => [
 			'moment.js'
 		],

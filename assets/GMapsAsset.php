@@ -13,18 +13,17 @@ namespace p2made\assets;
 class GMapsAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'gmaps',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/gmaps',
 		'pub-js'  => [
 			'gmaps.js',
 		],
 		'cdn-js'  => [
 			'//cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js',
 		],
+		'depends' => [
+			'p2made\assets\GMapsApiAsset',
+		],
 	);
-
-	public $depends = [
-		'p2made\assets\GMapsApiAsset',
-	];
 
 	public function init()
 	{

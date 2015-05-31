@@ -13,18 +13,17 @@ namespace p2made\assets;
 class WowAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'WOW/dist',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/WOW/dist',
 		'pub-js'  => [
 			'wow.min.js',
 		],
 		'cdn-js'  => [
 			'//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js',
 		],
+		'depends' => [
+			'p2made\assets\AnimateAsset',
+		],
 	);
-
-	public $depends = [
-		'p2made\assets\AnimateAsset',
-	];
 
 	public function init()
 	{
@@ -32,3 +31,9 @@ class WowAsset extends P2AssetBundle
 		parent::init();
 	}
 }
+
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/WOW/dist',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/\1',
+	private $_ownPathBase = '@vendor/p2made/yii2-asset-collection/assets/lib/';
+
+

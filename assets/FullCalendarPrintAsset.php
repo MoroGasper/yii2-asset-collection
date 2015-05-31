@@ -12,21 +12,16 @@ namespace p2made\assets;
 
 class FullCalendarPrintAsset extends P2AssetBundle
 {
-	/**
-	 * options for the css file beeing published
-	 * @var [type]
-	 */
-	public $cssOptions = [
-		'media' => 'print'
-	];
-
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'fullcalendar-2.3.1',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/fullcalendar-2.3.1',
 		'pub-css' => [
 			'fullcalendar.print.css',
 		],
 		'cdn-css' => [
 			'//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.print.css',
+		],
+		'cssOptions' => [
+			'media' => 'print'
 		],
 	);
 

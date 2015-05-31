@@ -13,7 +13,7 @@ namespace p2made\assets;
 class MorrisAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => $this->ownPathBase() . 'morris.js-0.5.1',
+		'sourcePath' => '@vendor/p2made/yii2-asset-collection/assets/lib/morris.js-0.5.1',
 		'pub-css' => [
 			'morris.css',
 		],
@@ -26,11 +26,10 @@ class MorrisAsset extends P2AssetBundle
 		'cdn-js'  => [
 			'//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js',
 		],
+		'depends' => [
+			'p2made\assets\RaphaelAsset',
+		],
 	);
-
-	public $depends = [
-		'p2made\assets\RaphaelAsset',
-	];
 
 	public function init()
 	{

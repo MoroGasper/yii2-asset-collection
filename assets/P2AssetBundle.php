@@ -39,12 +39,30 @@ class P2AssetBundle extends \yii\web\AssetBundle
 	protected $_useCdn = false;
 	private $_ownPathBase = '@vendor/p2made/yii2-asset-collection/assets/lib/';
 
+	protected static function ownPath($folder)
+	{
+		if(!$folder) {
+			return false;
+		}
+		return $this->_ownPathBase . $folder;
+	}
+
 	protected function configureAsset($resourceData)
 	{
 		if(P2AssetBundle::useCdn()) {
 			$this->configureCdnAsset($resourceData);
 		} else {
 			$this->configurePubAsset($resourceData);
+		}
+
+		if(isset($resourceData['cssOptions'])) {
+			$this->cssOptions = $resourceData['cssOptions'];
+		}
+		if(isset($resourceData['jsOptions'])) {
+			$this->jsOptions = $resourceData['jsOptions'];
+		}
+		if(isset($resourceData['depends'])) {
+			$this->depends = $resourceData['depends'];
 		}
 	}
 
@@ -77,11 +95,6 @@ class P2AssetBundle extends \yii\web\AssetBundle
 			$_useCdn = \Yii::$app->params['p2made']['useCdn'];
 		}
 		return $_useCdn;
-	}
-
-	protected function ownPathBase()
-	{
-		return $this->_ownPathBase;
 	}
 
 /* --- asset template --- */
