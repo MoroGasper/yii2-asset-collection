@@ -1,4 +1,4 @@
-P2AssetCollection v3.6.0
+P2AssetCollection v3.7.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
@@ -8,6 +8,7 @@ Resource | Asset Class
 [Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
 [Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset`, `p2made\assets\BootstrapPluginAsset`
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
+[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) | `p2made\assets\BootstrapSweetalertAsset`
 [Bootstrap Switch](http://www.bootstrap-switch.org) | `p2made\assets\BootstrapSwitchAsset`
 [dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
 [excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
@@ -110,6 +111,7 @@ p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapAsset::register($this);
 p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\BootstrapSocialAsset::register($this);
+p2made\assets\BootstrapSweetalertAsset::register($this);
 p2made\assets\BootstrapSwitchAsset::register($this);
 p2made\assets\DataTablesAsset::register($this);
 p2made\assets\ExcanvasAsset::register($this);
@@ -146,6 +148,7 @@ p2made\assets\PrintShivAsset::register($this);
 		'p2made\assets\BootstrapAsset',
 		'p2made\assets\BootstrapPluginAsset',
 		'p2made\assets\BootstrapSocialAsset',
+		'p2made\assets\BootstrapSweetalertAsset',
 		'p2made\assets\BootstrapSwitchAsset',
 		'p2made\assets\DataTablesAsset',
 		'p2made\assets\ExcanvasAsset',
