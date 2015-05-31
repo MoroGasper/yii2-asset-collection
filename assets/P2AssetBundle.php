@@ -53,12 +53,6 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 	protected function configureAsset($resourceData)
 	{
-		if(P2AssetBundle::useCdn()) {
-			$this->configureCdnAsset($resourceData);
-		} else {
-			$this->configurePubAsset($resourceData);
-		}
-
 		if(isset($resourceData['cssOptions'])) {
 			$this->cssOptions = $resourceData['cssOptions'];
 		}
@@ -68,6 +62,14 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		if(isset($resourceData['depends'])) {
 			$this->depends = $resourceData['depends'];
 		}
+
+		if(P2AssetBundle::useCdn()) {
+			$this->configureCdnAsset($resourceData);
+		} elseif(P2AssetBundle::cdnEnd() !== false) {
+		} else {
+			$this->configurePubAsset($resourceData);
+		}
+
 	}
 
 	protected function configurePubAsset($resourceData, $fallOut = false)
@@ -82,7 +84,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 		$currentPath = $resourceData['sourcePath'];
 		if(P2AssetBundle::cdnEnd()) {
-			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd() . '/lib/', $currentPath);
+			$this->baseUrl = str_replace('#/', P2AssetBundle::cdnEnd() , $currentPath);
 		} else {
 			$this->sourcePath = str_replace( '#/', P2AssetBundle::ownPath(), $currentPath);
 		}
@@ -139,7 +141,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 
 		// using 'p2made' as param space to allow for my other bits
 		if(isset(\Yii::$app->params['p2made']['cdnEnd'])) {
-			$_cdnEnd = \Yii::$app->params['p2made']['cdnEnd'];
+			$_cdnEnd = \Yii::$app->params['p2made']['cdnEnd'] . '/lib/';
 		} else {
 			$_cdnEnd = false;
 		}
@@ -176,5 +178,5 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		$this->configureAsset($this->resourceData);
 		parent::init();
 	}
-*/
+ */
 }
