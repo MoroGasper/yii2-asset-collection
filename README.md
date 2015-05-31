@@ -1,7 +1,13 @@
-P2AssetCollection v3.8.0
+P2AssetCollection v4.0.0
 ========================
 
 A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
+
+Following a recent time when bower dependancies were reported as unavailable when running `composer update` I decided to remove the bower dependancies by bundling all those assets. Because of the impact on the package size I have stripped the asset bundles to the necessary files plus README & license file, or little more than that.
+
+I've also added a means of shortening the `sourcePath` string in the asset classes.
+
+While none of these changes affect any of how P2AssetCollection is used the constitute enough change to the code that I've declared it as v4.0.0.
 
 Resource | Asset Class
 -------- | -----------
