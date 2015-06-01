@@ -129,10 +129,9 @@ class P2AssetBundle extends \yii\web\AssetBundle
 		return $_useCdn;
 	}
 
-	protected static function ownPath($folder)
+	protected static function ownPath()
 	{
-		if(!$folder) { return false; }
-		return '@vendor/p2made/yii2-asset-collection/assets/lib/' . $folder;
+		return '@vendor/p2made/yii2-asset-collection/assets/lib/';
 	}
 
 	protected static function cdnEnd()
