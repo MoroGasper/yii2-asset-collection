@@ -13,7 +13,7 @@ namespace p2made\assets;
 class FlotTooltipAsset extends P2AssetBundle
 {
 	private $resourceData = array(
-		'sourcePath' => '#/dummyFolder',
+		'sourcePath' => '#/flot.tooltip/js',
 		'pub' => [
 			'js' => [
 				'js/jquery.flot.tooltip.min.js',

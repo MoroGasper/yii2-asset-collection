@@ -151,7 +151,7 @@ class P2AssetBundle extends \yii\web\AssetBundle
 /* --- asset template --- */
 /*
 	private $resourceData = array(
-		'sourcePath' => '#/dummyFolder',
+		'sourcePath' => '#/folderName',
 		'pub' => [
 			'css' => [
 			],
