@@ -1,20 +1,13 @@
-P2AssetCollection v4.3.0-dev
-============================
+P2AssetWidgets v0.0.1
+========================
 
-A bunch of CSS & JS resources wrapped as Yii 2 AssetBundles.
-
-Following a recent time when bower dependancies were reported as unavailable when running `composer update` I decided to remove the bower dependancies by bundling all those assets. Because of the impact on the package size I have stripped the asset bundles to the necessary files plus README & license file, or little more than that.
-
-I've also added a means of shortening the `sourcePath` string in the asset classes.
-
-While none of these changes affect any of how P2AssetCollection is used the constitute enough change to the code that I've declared it as v4.0.0.
+CSS & JS resources wrapped as Yii 2 Widgets.
 
 Resource | Asset Class
 -------- | -----------
 [Animate.css](http://daneden.github.io/animate.css/) | `p2made\assets\AnimateAsset`
 [Bootstrap](http://getbootstrap.com) | `p2made\assets\BootstrapAsset`, `p2made\assets\BootstrapPluginAsset`
 [Bootstrap Social](https://github.com/lipis/bootstrap-social) | `p2made\assets\BootstrapSocialAsset`
-[Bootstrap Sweetalert](http://lipis.github.io/bootstrap-sweetalert/) | `p2made\assets\BootstrapSweetalertAsset`
 [Bootstrap Switch](http://www.bootstrap-switch.org) | `p2made\assets\BootstrapSwitchAsset`
 [dataTables](http://datatables.net) | `p2made\assets\DataTablesAsset`
 [excanvas](https://github.com/arv/ExplorerCanvas) | `p2made\assets\ExcanvasAsset`
@@ -23,7 +16,7 @@ Resource | Asset Class
 [Flot Charts](http://www.flotcharts.org) | `p2made\assets\FlotChartsAsset`
 Flot tooltip | `p2made\assets\FlotTooltipAsset` |
 [FontAwesome](http://fortawesome.github.io/Font-Awesome/) | `p2made\assets\FontAwesomeAsset`
-[FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset` & `p2made\assets\FullCalendarPrintAsset`
+[FullCalendar](http://fullcalendar.io) | `p2made\assets\FullCalendarAsset`
 [GMaps.js](https://hpneo.github.io/gmaps/) | `p2made\assets\GMapsAsset`
 [Holder.js](http://imsky.github.io/holder/) | `p2made\assets\HolderAsset`
 [Isotope](http://isotope.metafizzy.co) | `p2made\assets\IsotopeAsset`
@@ -53,19 +46,19 @@ The preferred way to install p2y2assetCollection is through [composer](http://ge
 Depending on your composer installation, run *one* of the following commands:
 
 ```
-composer require p2made/yii2-assets-collection "2.*"
+composer require p2made/yii2-assets-widgets "2.*"
 ```
 
 or
 
 ```
-php composer.phar require p2made/yii2-assets-collection "2.*"
+php composer.phar require p2made/yii2-assets-widgets "2.*"
 ```
 
 Alternatively add:
 
 ```
-	"p2made/yii2-assets-collection": "2.*"
+	"p2made/yii2-assets-widgets": "2.*"
 ```
 
 to the requires section of your `composer.json` file & p2y2assetCollection will be installed next time you run `composer update`.
@@ -117,7 +110,6 @@ p2made\assets\AnimateAsset::register($this);
 p2made\assets\BootstrapAsset::register($this);
 p2made\assets\BootstrapPluginAsset::register($this);
 p2made\assets\BootstrapSocialAsset::register($this);
-p2made\assets\BootstrapSweetalertAsset::register($this);
 p2made\assets\BootstrapSwitchAsset::register($this);
 p2made\assets\DataTablesAsset::register($this);
 p2made\assets\ExcanvasAsset::register($this);
@@ -154,7 +146,6 @@ p2made\assets\PrintShivAsset::register($this);
 		'p2made\assets\BootstrapAsset',
 		'p2made\assets\BootstrapPluginAsset',
 		'p2made\assets\BootstrapSocialAsset',
-		'p2made\assets\BootstrapSweetalertAsset',
 		'p2made\assets\BootstrapSwitchAsset',
 		'p2made\assets\DataTablesAsset',
 		'p2made\assets\ExcanvasAsset',
@@ -206,3 +197,40 @@ Very occasionally the CDN version of a resource may be a little behind the publi
 
 
 
+
+
+
+
+
+
+asset-widgets
+=============
+asset-widgets
+
+Installation
+------------
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+php composer.phar require --prefer-dist p2made/yii2-asset-widgets "*"
+```
+
+or add
+
+```
+"p2made/yii2-asset-widgets": "*"
+```
+
+to the require section of your `composer.json` file.
+
+
+Usage
+-----
+
+Once the extension is installed, simply use it in your code by  :
+
+```php
+<?= \p2made\widgets\AutoloadExample::widget(); ?>```
